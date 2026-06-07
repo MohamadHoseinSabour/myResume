@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمدحسین | طراح و توسعه‌دهنده وب & گرافیست</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="پورتفولیو و رزومه حرفه‌ای محمدحسین، طراح و توسعه‌دهنده وب و گرافیست خلاق. تبدیل ایده‌های پیچیده به رابط کاربری چشم‌نواز و کاربرپسند.">
+    <meta name="keywords" content="طراحی وب, توسعه وب, گرافیست, فرانت اند, UI/UX, محمدحسین, رزومه, پورتفولیو">
+    <meta name="author" content="MohamadHosein">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="rtl">
+    <!-- Ambient Background Lighting -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor-dot"></div>
+    <div class="custom-cursor-outline"></div>
+
+    <!-- Header Navigation -->
+    <header id="main-header" class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo-area">
+                <span class="logo-text">MH</span>
+                <span class="logo-dot">.</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active" data-i18n="nav_home">خانه</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav_about">درباره من</a></li>
+                    <li><a href="#skills" class="nav-link" data-i18n="nav_skills">مهارت‌ها</a></li>
+                    <li><a href="#experience" class="nav-link" data-i18n="nav_experience">سوابق کاری</a></li>
+                    <li><a href="#portfolio" class="nav-link" data-i18n="nav_portfolio">پورتفولیو</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav_contact">تماس</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Language Switcher -->
+                <button class="lang-switch-btn" id="lang-toggle" aria-label="Change Language">
+                    <span class="lang-label">EN</span>
+                    <svg class="lang-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                </button>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="badge-wrapper fade-in-up">
+                        <span class="creative-badge" data-i18n="hero_badge">آماده برای خلق ایده‌های نو</span>
+                    </div>
+                    <h1 class="hero-title fade-in-up delay-1">
+                        <span data-i18n="hero_greetings">سلام، من</span> 
+                        <span class="highlight-text gradient-1" data-i18n="hero_name">محمدحسین</span> 
+                        <span data-i18n="hero_greetings_end">هستم</span>
+                    </h1>
+                    <h2 class="hero-subtitle fade-in-up delay-2">
+                        <span id="typed-text"></span>
+                        <span class="typed-cursor">|</span>
+                    </h2>
+                    <p class="hero-desc fade-in-up delay-3" data-i18n="hero_desc">
+                        طراح گرافیک و توسعه‌دهنده وب، متمرکز بر طراحی رابط‌های کاربری مدرن، مینیمال و کاربرپسند. تبدیل ایده‌های پیچیده به تجربیات دیجیتال فراموش‌نشدنی.
+                    </p>
+                    <div class="hero-actions fade-in-up delay-4">
+                        <a href="#portfolio" class="btn btn-primary" data-i18n="hero_cta_projects">مشاهده نمونه‌کارها</a>
+                        <a href="#contact" class="btn btn-outline" data-i18n="hero_cta_contact">همکاری با من</a>
+                    </div>
+                </div>
+                
+                <!-- Interactive Hero Graphic -->
+                <div class="hero-visual fade-in-up delay-2">
+                    <div class="visual-container">
+                        <div class="interactive-card glass">
+                            <div class="card-header">
+                                <div class="dots"><span></span><span></span><span></span></div>
+                                <div class="card-title">index.js</div>
+                            </div>
+                            <div class="card-body">
+                                <pre><code><span class="keyword">const</span> developer = {
+  name: <span class="string">'MohamadHosein'</span>,
+  skills: [<span class="string">'WebDev'</span>, <span class="string">'UI/UX'</span>, <span class="string">'Graphics'</span>],
+  passionate: <span class="literal">true</span>,
+  creativity: <span class="number">9.9</span>
+};</code></pre>
+                            </div>
+                        </div>
+                        <div class="creative-shapes">
+                            <div class="shape circle-1"></div>
+                            <div class="shape triangle-1"></div>
+                            <div class="shape blob-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll to About Me">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="about_title">درباره من</h2>
+                    <span class="section-subtitle" data-i18n="about_subtitle">داستان من و مسیر شغلی‌ام</span>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-img-area">
+                        <div class="about-frame">
+                            <!-- Premium Geometric Design placeholder or avatar profile -->
+                            <div class="avatar-glow"></div>
+                            <div class="design-mosaic">
+                                <span></span><span></span><span></span><span></span>
+                            </div>
+                            <div class="about-metrics glass">
+                                <div class="metric-item">
+                                    <span class="metric-val">3+</span>
+                                    <span class="metric-lbl" data-i18n="about_metric_exp">سال سابقه</span>
+                                </div>
+                                <div class="metric-divider"></div>
+                                <div class="metric-item">
+                                    <span class="metric-val">15+</span>
+                                    <span class="metric-lbl" data-i18n="about_metric_proj">پروژه موفق</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-text-area">
+                        <h3 class="about-greeting" data-i18n="about_header">خلق هویت بصری متمایز در دنیای دیجیتال</h3>
+                        <p class="about-para" data-i18n="about_desc">
+                            من یک طراح و گرافیست وب هستم که همیشه مشتاق روبه‌رو شدن با چالش‌های جدید و خلق تجربه‌های بصری متمایز در دنیای دیجیتالم. باور دارم که ترکیب خلاقیت با یک طراحی هدفمند، تمیز و ساختاریافته، نه‌تنها ظاهر سایت را زیبا می‌کند، بلکه ارتباط موثری بین کاربر و محصول می‌سازد. هدف من تبدیل ایده‌های پیچیده به رابط‌های کاربری چشم‌نواز، مینیمال و کاربرپسند است.
+                        </p>
+                        
+                        <div class="personal-info">
+                            <div class="info-item">
+                                <span class="info-label" data-i18n="about_info_edu">تحصیلات:</span>
+                                <span class="info-value" data-i18n="about_info_edu_val">کارشناسی مهندسی برق (دانشگاه شهید چمران اهواز)</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label" data-i18n="about_info_lang">زبان‌ها:</span>
+                                <span class="info-value" data-i18n="about_info_lang_val">فارسی (زبان مادری) | انگلیسی (پایه / فنی)</span>
+                            </div>
+                        </div>
+
+                        <div class="about-actions">
+                            <a href="#contact" class="btn btn-primary" data-i18n="about_cta_hire">دعوت به همکاری</a>
+                            <a href="assets/docs/resume-placeholder.pdf" class="btn btn-outline" download id="download-cv">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                <span data-i18n="about_cta_cv">دانلود رزومه</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="skills_title">مهارت‌ها و ابزارها</h2>
+                    <span class="section-subtitle" data-i18n="skills_subtitle">تخصص‌های فنی و نرم‌افزارهای طراحی</span>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Category 1: Web Development -->
+                    <div class="skills-card glass">
+                        <div class="skills-header">
+                            <div class="skills-icon-box tech">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="skills_cat_dev">توسعه وب</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML & CSS</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">WordPress</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percent">65%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: UI/UX & Graphic Design -->
+                    <div class="skills-card glass">
+                        <div class="skills-header">
+                            <div class="skills-icon-box creative">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+                                    <path d="M12 6V12L16 14"></path>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="skills_cat_design">طراحی و رابط کاربری</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Figma (UI/UX)</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Photoshop & Illustrator</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Sketch</span>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Motion Graphics & Video</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Visual Identity Branding</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Tools & Methodologies -->
+                    <div class="skills-card glass">
+                        <div class="skills-header">
+                            <div class="skills-icon-box tools">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="skills_cat_tools">ابزارهای فنی</h3>
+                        </div>
+                        <div class="tools-grid">
+                            <div class="tool-badge">
+                                <span class="tool-dot"></span>
+                                <span class="tool-name">VS Code</span>
+                            </div>
+                            <div class="tool-badge">
+                                <span class="tool-dot"></span>
+                                <span class="tool-name">Git & GitHub</span>
+                            </div>
+                            <div class="tool-badge">
+                                <span class="tool-dot"></span>
+                                <span class="tool-name">AI Editing tools</span>
+                            </div>
+                            <div class="tool-badge">
+                                <span class="tool-dot"></span>
+                                <span class="tool-name">Anti-gravity</span>
+                            </div>
+                            <div class="tool-badge">
+                                <span class="tool-dot"></span>
+                                <span class="tool-name">WordPress CMS</span>
+                            </div>
+                            <div class="tool-badge">
+                                <span class="tool-dot"></span>
+                                <span class="tool-name">Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Timeline Section -->
+        <section id="experience" class="timeline-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="timeline_title">مسیر شغلی و تحصیلی</h2>
+                    <span class="section-subtitle" data-i18n="timeline_subtitle">سوابق کاری و تحصیلات دانشگاهی</span>
+                </div>
+                
+                <div class="timeline-container">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item timeline-exp">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">1399 - <span data-i18n="time_present">اکنون</span></div>
+                        <div class="timeline-content glass">
+                            <div class="timeline-header">
+                                <h3 class="role" data-i18n="exp1_title">طراح و توسعه‌دهنده وب (فریلنسر تخصصی)</h3>
+                                <h4 class="company" data-i18n="exp1_company">پروژه‌های آزادکاری و مستقل</h4>
+                            </div>
+                            <ul class="timeline-details">
+                                <li data-i18n="exp1_d1">طراحی و پیاده‌سازی پروژه‌های متنوع وب شامل پلتفرم‌های فروشگاهی، پورتال‌های خبری و وب‌سایت‌های شخصی/رزومه.</li>
+                                <li data-i18n="exp1_d2">ارائه راهکارهای منعطف از طریق توسعه سیستم‌های مدیریت محتوا (وردپرس) و طراحی اختصاصی بر پایه کدنویسی.</li>
+                                <li data-i18n="exp1_d3">تمرکز بر خلق رابط کاربری (UI) جذاب و تجربه کاربری (UX) روان در پلتفرم‌های دیجیتال.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="timeline-item timeline-exp">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">1401 - 1402</div>
+                        <div class="timeline-content glass">
+                            <div class="timeline-header">
+                                <h3 class="role" data-i18n="exp2_title">گرافیست وب</h3>
+                                <h4 class="company" data-i18n="exp2_company">سایت نخل مارکت</h4>
+                            </div>
+                            <ul class="timeline-details">
+                                <li data-i18n="exp2_d1">طراحی المان‌های گرافیکی و خلق هویت بصری یکپارچه برای پلتفرم فروشگاهی.</li>
+                                <li data-i18n="exp2_d2">بهینه‌سازی ظاهر سایت برای ارتقای تعامل کاربران، بهبود نرخ کلیک و یکپارچگی بصری.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="timeline-item timeline-exp">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">1400 - 1403</div>
+                        <div class="timeline-content glass">
+                            <div class="timeline-header">
+                                <h3 class="role" data-i18n="exp3_title">متخصص محتوای بصری و هوش مصنوعی</h3>
+                                <h4 class="company" data-i18n="exp3_company">مجموعه اینتاپاسو (۳ سال همکاری)</h4>
+                            </div>
+                            <ul class="timeline-details">
+                                <li data-i18n="exp3_d1">بهره‌گیری از ابزارهای پیشرفته هوش مصنوعی و تدوین ویدیو برای خلق محتوای دیجیتال متمایز و پیشرو.</li>
+                                <li data-i18n="exp3_d2">طراحی چیدمان بصری و ادیتور شبکه‌های اجتماعی با شناخت دقیق از رفتار و نیازهای مخاطبان دیجیتال.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Education 1 -->
+                    <div class="timeline-item timeline-edu">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">1402 - <span data-i18n="time_present">اکنون</span></div>
+                        <div class="timeline-content glass">
+                            <div class="timeline-header">
+                                <h3 class="role" data-i18n="edu1_title">کارشناسی مهندسی برق</h3>
+                                <h4 class="company" data-i18n="edu1_school">دانشگاه شهید چمران اهواز</h4>
+                            </div>
+                            <p class="timeline-desc" data-i18n="edu1_desc">تحصیل در گرایش مهندسی برق به عنوان بستر مناسب تقویت تفکر تحلیلی و حل مسئله در پروژه‌های پیچیده مهندسی و نرم‌افزاری.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Showcase Section -->
+        <section id="portfolio" class="portfolio-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="portfolio_title">نمونه‌کارها</h2>
+                    <span class="section-subtitle" data-i18n="portfolio_subtitle">منتخبی از آخرین طراحی‌ها و پروژه‌های من</span>
+                </div>
+                
+                <!-- Filters -->
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all" data-i18n="filter_all">همه</button>
+                    <button class="filter-btn" data-filter="web" data-i18n="filter_web">توسعه وب</button>
+                    <button class="filter-btn" data-filter="uiux" data-i18n="filter_uiux">رابط کاربری / Figma</button>
+                    <button class="filter-btn" data-filter="graphic" data-i18n="filter_graphic">گرافیک و برندینگ</button>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid">
+                    <!-- Project 1 (Web) -->
+                    <div class="portfolio-item glass" data-category="web">
+                        <div class="project-img-box">
+                            <img src="assets/images/project1.png" alt="E-commerce Redesign" class="project-img" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-icon" aria-label="View Project Code">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                    <a href="#" class="project-link-icon" aria-label="View Demo">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-cat" data-i18n="proj1_cat">توسعه وب / فروشگاهی</span>
+                            <h3 class="project-title" data-i18n="proj1_title">بازطراحی فروشگاه اینترنتی نخل مارکت</h3>
+                            <p class="project-desc" data-i18n="proj1_desc">طراحی ظاهر نوین و بهبود تجربه کاربری برای یکی از فروشگاه‌های اینترنتی بر بستر سیستم مدیریت محتوا.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 (UI/UX) -->
+                    <div class="portfolio-item glass" data-category="uiux">
+                        <div class="project-img-box">
+                            <img src="assets/images/project2.png" alt="AI Workspace UI" class="project-img" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-icon" aria-label="View Figma File">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"></path><path d="M12 6V12L16 14"></path></svg>
+                                    </a>
+                                    <a href="#" class="project-link-icon" aria-label="View Prototype">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-cat" data-i18n="proj2_cat">رابط کاربری UI/UX</span>
+                            <h3 class="project-title" data-i18n="proj2_title">رابط کاربری پنل تولید محتوا با هوش مصنوعی</h3>
+                            <p class="project-desc" data-i18n="proj2_desc">طراحی پروتوتایپ کامل و مدرن پنل کاربری ویرایش هوشمند و تدوین آنلاین ویدیوها در اینتاپاسو.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 (Graphic) -->
+                    <div class="portfolio-item glass" data-category="graphic">
+                        <div class="project-img-box">
+                            <img src="assets/images/project3.png" alt="Personal Branding" class="project-img" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-icon" aria-label="View Case Study">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-cat" data-i18n="proj3_cat">هویت بصری / گرافیک</span>
+                            <h3 class="project-title" data-i18n="proj3_title">طراحی هویت بصری استودیو گرافیک</h3>
+                            <p class="project-desc" data-i18n="proj3_desc">خلق لوگو، راهنمای برند و پالت رنگی اختصاصی به همراه قالب‌های حرفه‌ای اینستاگرام.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 (Web) -->
+                    <div class="portfolio-item glass" data-category="web">
+                        <div class="project-img-box">
+                            <img src="assets/images/project4.png" alt="Interactive App Design" class="project-img" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link-icon" aria-label="View Code">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    </a>
+                                    <a href="#" class="project-link-icon" aria-label="View Live">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-cat" data-i18n="proj4_cat">توسعه فرانت‌اند / جاوااسکریپت</span>
+                            <h3 class="project-title" data-i18n="proj4_title">طراحی تعاملی بازی تحت وب</h3>
+                            <p class="project-desc" data-i18n="proj4_desc">پیاده‌سازی یک بازی معمایی مینیمال با استفاده از HTML5 Canvas و انیمیشن‌های روان CSS.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="contact_title">تماس با من</h2>
+                    <span class="section-subtitle" data-i18n="contact_subtitle">بیایید با هم پروژه جدیدی را شروع کنیم</span>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Contact Cards -->
+                    <div class="contact-info-panel">
+                        <h3 class="panel-title" data-i18n="contact_panel_title">ارتباط مستقیم</h3>
+                        <p class="panel-desc" data-i18n="contact_panel_desc">برای گفتگو درباره همکاری، استخدام یا فقط گپ زدن در حوزه دیزاین و برنامه‌نویسی با من در تماس باشید.</p>
+                        
+                        <div class="contact-cards">
+                            <div class="contact-card glass">
+                                <div class="card-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </div>
+                                <div class="card-details">
+                                    <span class="card-label" data-i18n="contact_email">ایمیل</span>
+                                    <a href="mailto:mohamadhosein@example.com" class="card-link">mohamadhosein@example.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-card glass">
+                                <div class="card-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                </div>
+                                <div class="card-details">
+                                    <span class="card-label" data-i18n="contact_location">موقعیت</span>
+                                    <span class="card-link" data-i18n="contact_location_val">اهواز، ایران</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="social-wrapper">
+                            <span class="social-title" data-i18n="contact_social">شبکه‌های اجتماعی</span>
+                            <div class="social-links">
+                                <a href="#" class="social-icon" aria-label="GitHub">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="LinkedIn">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Instagram">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="contact-form glass" id="contact-form" action="#">
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="form-name" data-i18n="form_name_lbl">نام و نام‌خانوادگی</label>
+                                <input type="text" id="form-name" required placeholder="نام شما">
+                            </div>
+                            <div class="input-group">
+                                <label for="form-email" data-i18n="form_email_lbl">آدرس ایمیل</label>
+                                <input type="email" id="form-email" required placeholder="email@example.com">
+                            </div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="form-subject" data-i18n="form_subject_lbl">موضوع پیام</label>
+                            <input type="text" id="form-subject" required placeholder="موضوع گفتگو">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="form-message" data-i18n="form_message_lbl">متن پیام</label>
+                            <textarea id="form-message" rows="5" required placeholder="پیام خود را بنویسید..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span data-i18n="form_submit">ارسال پیام</span>
+                            <svg class="submit-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="copyright">
+                &copy; <span id="current-year">2026</span> <span data-i18n="footer_rights">تمامی حقوق برای محمدحسین محفوظ است. طراحی با عشق.</span>
+            </p>
+            <div class="scroll-to-top" id="scroll-top">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="19" x2="12" y2="5"></line>
+                    <polyline points="5 12 12 5 19 12"></polyline>
+                </svg>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App JavaScript -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
