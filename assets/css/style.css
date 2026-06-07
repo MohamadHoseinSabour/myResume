@@ -473,6 +473,7 @@ body.rtl .nav-link::after {
     display: flex;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .hero-grid {
@@ -508,7 +509,7 @@ body.rtl .hero-content {
 }
 
 .hero-title {
-    font-size: 3.5rem;
+    font-size: clamp(2.2rem, 7vw, 3.5rem);
     font-weight: 800;
     line-height: 1.2;
     color: var(--color-text-primary);
@@ -593,6 +594,12 @@ body.rtl .hero-content {
     font-size: 0.9rem;
     line-height: 1.6;
     background: rgba(15, 18, 26, 0.4);
+}
+
+.card-body pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-all;
 }
 
 .keyword { color: #f72585; }
@@ -1792,12 +1799,22 @@ body.rtl .submit-btn:hover .submit-icon {
     }
     
     .hero-title {
-        font-size: 2.6rem;
+        font-size: clamp(1.8rem, 6vw, 2.5rem);
     }
     
     .hero-subtitle {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         min-height: 34px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
     }
     
     .section-title {
