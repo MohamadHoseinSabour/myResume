@@ -14,7 +14,7 @@ const translations = {
         // Hero
         hero_badge: "آماده برای خلق ایده‌های نو",
         hero_greetings: "سلام، من",
-        hero_name: "محمدحسین",
+        hero_name: "محمدحسین صبور",
         hero_greetings_end: "هستم",
         hero_desc: "طراح گرافیک و توسعه‌دهنده وب، متمرکز بر طراحی رابط‌های کاربری مدرن، مینیمال و کاربرپسند. تبدیل ایده‌های پیچیده به تجربیات دیجیتال فراموش‌نشدنی.",
         hero_cta_projects: "مشاهده نمونه‌کارها",
@@ -45,6 +45,10 @@ const translations = {
         timeline_title: "مسیر شغلی و تحصیلی",
         timeline_subtitle: "سوابق کاری و تحصیلات دانشگاهی",
         time_present: "اکنون",
+        exp1_date: "1403 - اکنون",
+        exp2_date: "1403 - 1404",
+        exp3_date: "1403 - 1404",
+        edu1_date: "1402 - اکنون",
         exp1_title: "طراح و توسعه‌دهنده وب (فریلنسر تخصصی)",
         exp1_company: "پروژه‌های آزادکاری و مستقل",
         exp1_d1: "طراحی و پیاده‌سازی پروژه‌های متنوع وب شامل پلتفرم‌های فروشگاهی، پورتال‌های خبری و وب‌سایت‌های شخصی/رزومه.",
@@ -67,6 +71,7 @@ const translations = {
 
         // Portfolio
         portfolio_title: "نمونه‌کارها",
+        portfolio_demo: "(دمو)",
         portfolio_subtitle: "منتخبی از آخرین طراحی‌ها و پروژه‌های من",
         filter_all: "همه",
         filter_web: "توسعه وب",
@@ -96,7 +101,7 @@ const translations = {
         contact_panel_desc: "برای گفتگو درباره همکاری، استخدام یا فقط گپ زدن در حوزه دیزاین و برنامه‌نویسی با من در تماس باشید.",
         contact_email: "ایمیل",
         contact_location: "موقعیت",
-        contact_location_val: "اهواز، ایران",
+        contact_location_val: "ایران ، خوزستان ، اهواز ، آخرسفالت ، خیابان زارع پلاک 4",
         contact_social: "شبکه‌های اجتماعی",
         
         form_name_lbl: "نام و نام‌خانوادگی",
@@ -124,7 +129,7 @@ const translations = {
         // Hero
         hero_badge: "Ready to Create Innovative Ideas",
         hero_greetings: "Hi, I am",
-        hero_name: "MohamadHosein",
+        hero_name: "MohamadHosein Sabour",
         hero_greetings_end: "",
         hero_desc: "Web Developer and Graphic Designer focusing on crafting clean, minimal, and user-centric interfaces. Turning complex concepts into memorable digital experiences.",
         hero_cta_projects: "View My Works",
@@ -155,6 +160,10 @@ const translations = {
         timeline_title: "Career & Education",
         timeline_subtitle: "My professional timeline and academic status",
         time_present: "Present",
+        exp1_date: "2024 - Present",
+        exp2_date: "2024 - 2025",
+        exp3_date: "2024 - 2025",
+        edu1_date: "2023 - Present",
         exp1_title: "Web Designer & Developer (Specialized Freelancer)",
         exp1_company: "Freelance & Independent Projects",
         exp1_d1: "Designed and implemented diverse web platforms including e-commerce platforms, news portals, and personal CV sites.",
@@ -177,6 +186,7 @@ const translations = {
 
         // Portfolio
         portfolio_title: "Portfolio",
+        portfolio_demo: "(Demo)",
         portfolio_subtitle: "A selection of my latest designs and projects",
         filter_all: "All",
         filter_web: "Web Dev",
@@ -206,7 +216,7 @@ const translations = {
         contact_panel_desc: "Feel free to reach out for design contracts, full-time opportunities, or just code/graphics chit-chat.",
         contact_email: "Email",
         contact_location: "Location",
-        contact_location_val: "Ahvaz, Iran",
+        contact_location_val: "No. 4, Zare St., Akher Asfalt, Ahvaz, Khuzestan, Iran",
         contact_social: "Social Media",
         
         form_name_lbl: "Full Name",
@@ -284,8 +294,8 @@ function applyLanguage(lang) {
     
     // Update Title tag
     document.title = isRtl 
-        ? "محمدحسین | طراح و توسعه‌دهنده وب & گرافیست" 
-        : "MohamadHosein | Web Developer & Graphic Designer";
+        ? "محمدحسین صبور | طراح و توسعه‌دهنده وب & گرافیست" 
+        : "MohamadHosein Sabour | Web Developer & Graphic Designer";
 
     // Translate all elements with data-i18n attribute
     const elements = document.querySelectorAll('[data-i18n]');

@@ -1175,6 +1175,15 @@ body.rtl .timeline-details li::before {
     padding: 100px 0;
 }
 
+.portfolio-demo-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    opacity: 0.5;
+    margin-inline-start: 10px;
+    vertical-align: middle;
+}
+
 /* Filters */
 .portfolio-filters {
     display: flex;
