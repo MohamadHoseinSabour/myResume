@@ -87,23 +87,23 @@ const translations = {
         
         proj1_cat: "افزونه وردپرس و هوش مصنوعی",
         proj1_title: "سایت معرفی و افزونه هوش مصنوعی چت‌نگار",
-        proj1_desc: "طراحی و اجرای کامل وب‌سایت معرفی محصول و توسعه افزونه چت‌بات آنلاین هوش مصنوعی وردپرس برای پاسخ‌گویی خودکار به مشتریان.",
+        proj1_desc: "طراحی و پیاده‌سازی کامل لندینگ‌پیج معرفی محصول و توسعه فنی افزونه هوشمند چت‌بات آنلاین برای وردپرس. این سیستم با اتصال به موتورهای هوش مصنوعی، پاسخ‌گویی خودکار ۲۴/۷، افزایش نرخ تبدیل مشتریان و پشتیبانی سریع در وب‌سایت‌های فروشگاهی را فراهم می‌کند.",
         
         proj2_cat: "افزونه وردپرس و هوش مصنوعی",
         proj2_title: "سایت معرفی و افزونه هوش مصنوعی مقاله‌نگار",
-        proj2_desc: "افزونه پیشرفته هوش مصنوعی برای تولید محتوای سئو شده (SEO) و ایجاد خودکار محصول در وردپرس به همراه سایت معرفی اختصاصی.",
+        proj2_desc: "توسعه افزونه پیشرفته هوش مصنوعی مقاله‌نگار و طراحی اختصاصی سایت معرفی آن. این ابزار هوشمند قادر است مقالات کاملاً سئو شده (SEO)، عناوین جذاب، متا دسکریپشن و محصول‌های کامل را با استانداردهای گوگل و به صورت خودکار در وب‌سایت‌های وردپرسی تولید کند.",
         
         proj3_cat: "توسعه وب / استاتیک",
         proj3_title: "سایت رزومه و پورتفولیوی شخصی",
-        proj3_desc: "وب‌سایت شخصی و رزومه تعاملی، مدرن و دو زبانه با طراحی استاتیک و جلوه‌های بصری گلس‌مورفیسم.",
+        proj3_desc: "طراحی و فرانت‌اند اختصاصی وب‌سایت رزومه و پورتفولیوی شخصی به صورت استاتیک و دو زبانه (فارسی و انگلیسی). بهره‌گیری از هویت بصری مدرن، افکت‌های گلس‌مورفیسم، انیمیشن‌های تعاملی اسکرول و رابط کاربری شیک برای نمایش جذاب سوابق کاری و نمونه‌کارها.",
         
         proj4_cat: "فروشگاه اینترنتی / E-Commerce",
         proj4_title: "فروشگاه اینترنتی حسینی کالا",
-        proj4_desc: "طراحی و توسعه پلتفرم فروشگاهی مدرن و جذاب در حوزه عرضه آنلاین لوازم خانگی و دستگاه‌های الکترونیکی.",
+        proj4_desc: "طراحی، چیدمان بصری و توسعه پلتفرم فروشگاهی حسینی کالا در زمینه عرضه آنلاین انواع لوازم خانگی و دستگاه‌های الکترونیکی. تمرکز اصلی بر بهینه‌سازی مسیر خرید کاربر (User Journey)، طراحی بنرهای تبلیغاتی، رابط کاربری روان و دسترسی سریع به کالاها.",
 
         proj5_cat: "فروشگاه اینترنتی / گیمینگ",
         proj5_title: "فروشگاه اینترنتی نخل مارکت",
-        proj5_desc: "یکی از بزرگ‌ترین فروشگاه‌های اینترنتی ایران در حوزه کنسول و لوازم بازی (همکاری در تیم طراحی ۲ سال پیش).",
+        proj5_desc: "همکاری در تیم طراحی پلتفرم نخل مارکت به عنوان یکی از مرجع‌های اصلی و بزرگ فروشگاه‌های اینترنتی کنسول، بازی و تجهیزات گیمینگ در ایران (۲ سال پیش). طراحی المان‌های گرافیکی، هویت بصری صفحات و ارتقای تعامل کاربران در پلتفرم.",
 
         // Contact
         contact_title: "تماس با من",
@@ -215,23 +215,23 @@ const translations = {
         
         proj1_cat: "WordPress Plugin & AI",
         proj1_title: "ChatNegar AI Plugin & Landing Site",
-        proj1_desc: "Full design & development of the product landing page and AI online chatbot plugin for automated WordPress customer response.",
+        proj1_desc: "End-to-end UI design and technical development of the ChatNegar product landing site and WordPress AI chatbot plugin. It leverages AI models to deliver 24/7 automated customer support, instant query resolution, and enhanced conversion rates for web platforms.",
         
         proj2_cat: "WordPress Plugin & AI",
         proj2_title: "MaghaleNegar AI Content Generator",
-        proj2_desc: "Advanced AI plugin for generating SEO-optimized articles and automated product creation in WordPress with a dedicated landing page.",
+        proj2_desc: "Development of the MaghaleNegar AI WordPress plugin and its custom product landing page. Designed to automate SEO-optimized article creation, compelling meta descriptions, and complete WooCommerce product generation aligned with Google search guidelines.",
         
         proj3_cat: "Web Development / Static CV",
         proj3_title: "Personal CV & Interactive Portfolio",
-        proj3_desc: "Interactive, modern, and bilingual static resume website crafted with glassmorphism UI design.",
+        proj3_desc: "Custom frontend design and development of an interactive, bilingual (Persian & English) static portfolio website. Built with glassmorphism visual aesthetic, fluid scroll micro-animations, and responsive layout to highlight professional timeline and projects.",
         
         proj4_cat: "E-Commerce Storefront",
         proj4_title: "Hosseiny Kala E-Commerce Store",
-        proj4_desc: "Design and development of a modern e-commerce storefront for home appliances and consumer electronics.",
+        proj4_desc: "Design and development of the Hosseiny Kala e-commerce storefront for home appliances and consumer electronics. Focused on streamlining user navigation, custom promotional banner design, smooth Checkout experience, and intuitive product categorization.",
 
         proj5_cat: "E-Commerce / Gaming Store",
         proj5_title: "Nakhl Market Gaming E-Commerce",
-        proj5_desc: "One of Iran's major gaming & console e-commerce stores (collaboration in the design team 2 years ago).",
+        proj5_desc: "Collaboration with the design team of Nakhl Market (2 years ago), one of Iran's premier e-commerce destinations for gaming consoles and accessories. Created visual graphic elements, UI banners, and user interaction touchpoints for high-volume store traffic.",
 
         // Contact
         contact_title: "Get In Touch",
