@@ -45,54 +45,65 @@ const translations = {
         timeline_title: "مسیر شغلی و تحصیلی",
         timeline_subtitle: "سوابق کاری و تحصیلات دانشگاهی",
         time_present: "اکنون",
-        exp1_date: "1403 - اکنون",
-        exp2_date: "1403 - 1404",
-        exp3_date: "1401 - 1404",
+        exp1_date: "1404 - اکنون",
+        exp2_date: "1403 - اکنون",
+        exp3_date: "1403 - 1404",
         edu1_date: "1402 - اکنون",
-        exp1_title: "طراح و توسعه‌دهنده وب (فریلنسر تخصصی)",
-        exp1_company: "پروژه‌های آزادکاری و مستقل",
-        exp1_d1: "طراحی و پیاده‌سازی پروژه‌های متنوع وب شامل پلتفرم‌های فروشگاهی، پورتال‌های خبری و وب‌سایت‌های شخصی/رزومه.",
-        exp1_d2: "ارائه راهکارهای منعطف از طریق توسعه سیستم‌های مدیریت محتوا (وردپرس) و طراحی اختصاصی بر پایه کدنویسی.",
-        exp1_d3: "تمرکز بر خلق رابط کاربری (UI) جذاب و تجربه کاربری (UX) روان در پلتفرم‌های دیجیتال.",
+        exp4_date: "1401 - 1404",
         
-        exp2_title: "گرافیست وب",
-        exp2_company: "سایت نخل مارکت",
-        exp2_d1: "طراحی المان‌های گرافیکی و خلق هویت بصری یکپارچه برای وب‌سایت.",
-        exp2_d2: "بهینه‌سازی ظاهر سایت برای ارتقای تعامل کاربران و یکپارچگی بصری.",
+        exp1_title: "فریلنسر بین‌المللی (طراحی سایت، برنامه‌نویسی و ادیت ویدیو)",
+        exp1_company: "پروژه‌های بین‌المللی و آزادکاری",
+        exp1_d1: "طراحی و پیاده‌سازی وب‌سایت‌های مدرن و برنامه‌نویسی تخصصی وب برای پروژه‌های بین‌المللی.",
+        exp1_d2: "ادیت و تدوین حرفه‌ای ویدیو، تولید محتوای چندرسانه‌ای و تیزرهای تبلیغاتی با استانداردهای جهانی.",
+        exp1_d3: "ارائه خدمات تخصصی فرانت‌اند، بک‌اند و طراحی دیجیتال به صورت دورکاری.",
         
-        exp3_title: "متخصص محتوای بصری و هوش مصنوعی",
-        exp3_company: "مجموعه اینتاپاسو (۳ سال همکاری)",
-        exp3_d1: "بهره‌گیری از ابزارهای هوش مصنوعی و تدوین ویدیو برای خلق محتوای دیجیتال متمایز.",
-        exp3_d2: "طراح گرافیک و ادیتور شبکه‌های اجتماعی و طراحی لی‌اوت پیج‌ها بر اساس نیاز مخاطبان دیجیتال.",
+        exp2_title: "طراح و توسعه‌دهنده وب (فریلنسر تخصصی)",
+        exp2_company: "پروژه‌های آزادکاری و مستقل",
+        exp2_d1: "طراحی و پیاده‌سازی پروژه‌های متنوع وب شامل پلتفرم‌های فروشگاهی، پورتال‌های خبری و وب‌سایت‌های شخصی/رزومه.",
+        exp2_d2: "ارائه راهکارهای منعطف از طریق توسعه سیستم‌های مدیریت محتوا (وردپرس) و طراحی اختصاصی بر پایه کدنویسی.",
+        exp2_d3: "تمرکز بر خلق رابط کاربری (UI) جذاب و تجربه کاربری (UX) روان در پلتفرم‌های دیجیتال.",
+        
+        exp3_title: "گرافیست وب",
+        exp3_company: "سایت نخل مارکت",
+        exp3_d1: "طراحی المان‌های گرافیکی و خلق هویت بصری یکپارچه برای وب‌سایت.",
+        exp3_d2: "بهینه‌سازی ظاهر سایت برای ارتقای تعامل کاربران و یکپارچگی بصری.",
         
         edu1_title: "کارشناسی مهندسی برق",
         edu1_school: "دانشگاه شهید چمران اهواز (۱۴۰۲ - تاکنون)",
         edu1_desc: "تحصیل در رشته مهندسی برق به عنوان بستر مناسب تقویت تفکر تحلیلی و حل مسئله در مسائل پیچیده.",
 
+        exp4_title: "متخصص محتوای بصری و هوش مصنوعی",
+        exp4_company: "مجموعه اینتاپاسو (۳ سال همکاری)",
+        exp4_d1: "بهره‌گیری از ابزارهای هوش مصنوعی و تدوین ویدیو برای خلق محتوای دیجیتال متمایز.",
+        exp4_d2: "طراح گرافیک و ادیتور شبکه‌های اجتماعی و طراحی لی‌اوت پیج‌ها بر اساس نیاز مخاطبان دیجیتال.",
+
         // Portfolio
         portfolio_title: "نمونه‌کارها",
-        portfolio_demo: "(دمو)",
+        portfolio_demo: "",
         portfolio_subtitle: "منتخبی از آخرین طراحی‌ها و پروژه‌های من",
         filter_all: "همه",
-        filter_web: "توسعه وب",
-        filter_uiux: "رابط کاربری / Figma",
-        filter_graphic: "گرافیک و برندینگ",
+        filter_ai: "افزونه و هوش مصنوعی",
+        filter_web: "توسعه وب و فروشگاهی",
         
-        proj1_cat: "توسعه وب / فروشگاهی",
-        proj1_title: "بازطراحی فروشگاه اینترنتی نخل مارکت",
-        proj1_desc: "طراحی ظاهر نوین و بهبود تجربه کاربری برای یکی از فروشگاه‌های اینترنتی بر بستر سیستم مدیریت محتوا.",
+        proj1_cat: "افزونه وردپرس و هوش مصنوعی",
+        proj1_title: "سایت معرفی و افزونه هوش مصنوعی چت‌نگار",
+        proj1_desc: "طراحی و اجرای کامل وب‌سایت معرفی محصول و توسعه افزونه چت‌بات آنلاین هوش مصنوعی وردپرس برای پاسخ‌گویی خودکار به مشتریان.",
         
-        proj2_cat: "رابط کاربری UI/UX",
-        proj2_title: "پنل تولید محتوای ویدیویی هوش مصنوعی",
-        proj2_desc: "طراحی پروتوتایپ کامل و مدرن پنل کاربری ویرایش هوشمند و تدوین آنلاین ویدیوها در اینتاپاسو.",
+        proj2_cat: "افزونه وردپرس و هوش مصنوعی",
+        proj2_title: "سایت معرفی و افزونه هوش مصنوعی مقاله‌نگار",
+        proj2_desc: "افزونه پیشرفته هوش مصنوعی برای تولید محتوای سئو شده (SEO) و ایجاد خودکار محصول در وردپرس به همراه سایت معرفی اختصاصی.",
         
-        proj3_cat: "هویت بصری / گرافیک",
-        proj3_title: "طراحی هویت بصری استودیو گرافیک",
-        proj3_desc: "خلق لوگو، راهنمای برند و پالت رنگی اختصاصی به همراه قالب‌های حرفه‌ای اینستاگرام.",
+        proj3_cat: "توسعه وب / استاتیک",
+        proj3_title: "سایت رزومه و پورتفولیوی شخصی",
+        proj3_desc: "وب‌سایت شخصی و رزومه تعاملی، مدرن و دو زبانه با طراحی استاتیک و جلوه‌های بصری گلس‌مورفیسم.",
         
-        proj4_cat: "توسعه فرانت‌اند / جاوااسکریپت",
-        proj4_title: "طراحی تعاملی بازی تحت وب",
-        proj4_desc: "پیاده‌سازی یک بازی معمایی مینیمال با استفاده از HTML5 Canvas و انیمیشن‌های روان CSS.",
+        proj4_cat: "فروشگاه اینترنتی / E-Commerce",
+        proj4_title: "فروشگاه اینترنتی حسینی کالا",
+        proj4_desc: "طراحی و توسعه پلتفرم فروشگاهی مدرن و جذاب در حوزه عرضه آنلاین لوازم خانگی و دستگاه‌های الکترونیکی.",
+
+        proj5_cat: "فروشگاه اینترنتی / گیمینگ",
+        proj5_title: "فروشگاه اینترنتی نخل مارکت",
+        proj5_desc: "یکی از بزرگ‌ترین فروشگاه‌های اینترنتی ایران در حوزه کنسول و لوازم بازی (همکاری در تیم طراحی ۲ سال پیش).",
 
         // Contact
         contact_title: "تماس با من",
@@ -100,6 +111,8 @@ const translations = {
         contact_panel_title: "ارتباط مستقیم",
         contact_panel_desc: "برای گفتگو درباره همکاری، استخدام یا فقط گپ زدن در حوزه دیزاین و برنامه‌نویسی با من در تماس باشید.",
         contact_email: "ایمیل",
+        contact_phone: "شماره تلفن",
+        contact_phone_val: "09039238316",
         contact_location: "موقعیت",
         contact_location_val: "ایران ، خوزستان ، اهواز ، آخرسفالت ، خیابان زارع پلاک 4",
         contact_social: "شبکه‌های اجتماعی",
@@ -160,54 +173,65 @@ const translations = {
         timeline_title: "Career & Education",
         timeline_subtitle: "My professional timeline and academic status",
         time_present: "Present",
-        exp1_date: "2024 - Present",
-        exp2_date: "2024 - 2025",
-        exp3_date: "2022 - 2025",
+        exp1_date: "2025 - Present",
+        exp2_date: "2024 - Present",
+        exp3_date: "2024 - 2025",
         edu1_date: "2023 - Present",
-        exp1_title: "Web Designer & Developer (Specialized Freelancer)",
-        exp1_company: "Freelance & Independent Projects",
-        exp1_d1: "Designed and implemented diverse web platforms including e-commerce platforms, news portals, and personal CV sites.",
-        exp1_d2: "Provided flexible web solutions via custom CMS setups (WordPress) as well as custom code frontend development.",
-        exp1_d3: "Focused on creating visually striking user interfaces (UI) and frictionless user experiences (UX) on digital products.",
+        exp4_date: "2022 - 2025",
+
+        exp1_title: "International Freelancer (Web Design, Programming & Video Editing)",
+        exp1_company: "International & Remote Freelance Projects",
+        exp1_d1: "Modern web design and specialized programming (frontend & backend) for international clients.",
+        exp1_d2: "Professional video editing, multimedia content creation, and high-quality video production.",
+        exp1_d3: "Delivering remote digital services and managing end-to-end freelance contracts globally.",
         
-        exp2_title: "Web Graphic Designer",
-        exp2_company: "Nakhl Market E-Commerce",
-        exp2_d1: "Created graphic layout elements and established a cohesive brand visual identity for the platform.",
-        exp2_d2: "Optimized website layout assets to improve user engagement metrics and visual harmony.",
+        exp2_title: "Web Designer & Developer (Specialized Freelancer)",
+        exp2_company: "Freelance & Independent Projects",
+        exp2_d1: "Designed and implemented diverse web platforms including e-commerce platforms, news portals, and personal CV sites.",
+        exp2_d2: "Provided flexible web solutions via custom CMS setups (WordPress) as well as custom code frontend development.",
+        exp2_d3: "Focused on creating visually striking user interfaces (UI) and frictionless user experiences (UX) on digital products.",
         
-        exp3_title: "Visual Content & AI Specialist",
-        exp3_company: "Intapaso Co. (3 Years Collaboration)",
-        exp3_d1: "Leveraged advanced artificial intelligence generation tools and video post-production editing for standout digital content.",
-        exp3_d2: "Designed visual grids and managed social media layout structures matching specific target audiences behavior.",
+        exp3_title: "Web Graphic Designer",
+        exp3_company: "Nakhl Market E-Commerce",
+        exp3_d1: "Created graphic layout elements and established a cohesive brand visual identity for the platform.",
+        exp3_d2: "Optimized website layout assets to improve user engagement metrics and visual harmony.",
         
         edu1_title: "B.Sc. in Electrical Engineering",
         edu1_school: "Shahid Chamran University of Ahvaz (2023 - Present)",
         edu1_desc: "Studying Electrical Engineering, fostering solid analytical reasoning and problem-solving structures for complex projects.",
 
+        exp4_title: "Visual Content & AI Specialist",
+        exp4_company: "Intapaso Co. (3 Years Collaboration)",
+        exp4_d1: "Leveraged advanced artificial intelligence generation tools and video post-production editing for standout digital content.",
+        exp4_d2: "Designed visual grids and managed social media layout structures matching specific target audiences behavior.",
+
         // Portfolio
         portfolio_title: "Portfolio",
-        portfolio_demo: "(Demo)",
+        portfolio_demo: "",
         portfolio_subtitle: "A selection of my latest designs and projects",
         filter_all: "All",
-        filter_web: "Web Dev",
-        filter_uiux: "UI/UX Figma",
-        filter_graphic: "Graphics / Brand",
+        filter_ai: "AI & Plugins",
+        filter_web: "Web & E-Commerce",
         
-        proj1_cat: "Web Dev / E-Commerce",
-        proj1_title: "Nakhl Market Storefront Redesign",
-        proj1_desc: "Re-platforming visual layout and optimizing user flows for a high-traffic Persian e-commerce storefront.",
+        proj1_cat: "WordPress Plugin & AI",
+        proj1_title: "ChatNegar AI Plugin & Landing Site",
+        proj1_desc: "Full design & development of the product landing page and AI online chatbot plugin for automated WordPress customer response.",
         
-        proj2_cat: "UI/UX Interface",
-        proj2_title: "AI Video Editing Platform Dashboard",
-        proj2_desc: "Designed complete interactive workspace prototyping for smart online video rendering workflows.",
+        proj2_cat: "WordPress Plugin & AI",
+        proj2_title: "MaghaleNegar AI Content Generator",
+        proj2_desc: "Advanced AI plugin for generating SEO-optimized articles and automated product creation in WordPress with a dedicated landing page.",
         
-        proj3_cat: "Visual Identity / Graphic",
-        proj3_title: "Creative Studio Brand Identity",
-        proj3_desc: "Created typography logos, brand guidelines, color palettes, and social media posting assets.",
+        proj3_cat: "Web Development / Static CV",
+        proj3_title: "Personal CV & Interactive Portfolio",
+        proj3_desc: "Interactive, modern, and bilingual static resume website crafted with glassmorphism UI design.",
         
-        proj4_cat: "Frontend / Vanilla JS",
-        proj4_title: "Interactive Web Puzzle Game",
-        proj4_desc: "Coded a lightweight, interactive web canvas game incorporating physics particles and CSS transforms.",
+        proj4_cat: "E-Commerce Storefront",
+        proj4_title: "Hosseiny Kala E-Commerce Store",
+        proj4_desc: "Design and development of a modern e-commerce storefront for home appliances and consumer electronics.",
+
+        proj5_cat: "E-Commerce / Gaming Store",
+        proj5_title: "Nakhl Market Gaming E-Commerce",
+        proj5_desc: "One of Iran's major gaming & console e-commerce stores (collaboration in the design team 2 years ago).",
 
         // Contact
         contact_title: "Get In Touch",
@@ -215,6 +239,8 @@ const translations = {
         contact_panel_title: "Direct Channels",
         contact_panel_desc: "Feel free to reach out for design contracts, full-time opportunities, or just code/graphics chit-chat.",
         contact_email: "Email",
+        contact_phone: "Phone Number",
+        contact_phone_val: "+98 903 923 8316",
         contact_location: "Location",
         contact_location_val: "No. 4, Zare St., Akher Asfalt, Ahvaz, Khuzestan, Iran",
         contact_social: "Social Media",
@@ -552,7 +578,7 @@ function initPortfolioFilters() {
             portfolioItems.forEach(item => {
                 const category = item.getAttribute('data-category');
 
-                if (filterValue === 'all' || category === filterValue) {
+                if (filterValue === 'all' || (category && category.includes(filterValue))) {
                     item.classList.remove('hidden');
                 } else {
                     item.classList.add('hidden');
@@ -563,7 +589,7 @@ function initPortfolioFilters() {
 }
 
 /* ==========================================================================
-   CONTACT FORM HANDLER & TOAST NOTIFICATION
+   CONTACT FORM HANDLER & MODAL POPUP
    ========================================================================== */
 function initContactForm() {
     const form = document.getElementById('contact-form');
@@ -573,36 +599,84 @@ function initContactForm() {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        // Get values
-        const name = document.getElementById('form-name').value;
-        const email = document.getElementById('form-email').value;
-        const subject = document.getElementById('form-subject').value;
-        const message = document.getElementById('form-message').value;
-
         // Visual loader inside submit button
         const submitBtn = form.querySelector('.submit-btn');
         const originalText = submitBtn.querySelector('span').textContent;
-        submitBtn.querySelector('span').textContent = currentLang === 'fa' ? 'درحال ارسال...' : 'Sending...';
+        submitBtn.querySelector('span').textContent = currentLang === 'fa' ? 'درحال پردازش...' : 'Processing...';
         submitBtn.style.opacity = '0.7';
         submitBtn.disabled = true;
 
-        // Mock ajax submission delay
         setTimeout(() => {
             // Restore button
             submitBtn.querySelector('span').textContent = originalText;
             submitBtn.style.opacity = '1';
             submitBtn.disabled = false;
             
-            // Show Success Notification Toast
-            showToast(currentLang === 'fa' 
-                ? 'پیام شما با موفقیت ارسال شد! در اسرع وقت پاسخ داده خواهد شد.' 
-                : 'Your message was sent successfully! I will respond shortly.'
-            );
+            // Show Contact Inactive Modal Popup
+            showContactModal();
             
             // Clear inputs
             form.reset();
-        }, 1500);
+        }, 600);
     });
+}
+
+function showContactModal() {
+    let modal = document.getElementById('contact-modal');
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'contact-modal';
+        modal.className = 'custom-modal';
+        document.body.appendChild(modal);
+    }
+    
+    const isFa = currentLang === 'fa';
+    
+    modal.innerHTML = `
+        <div class="modal-backdrop" onclick="closeContactModal()"></div>
+        <div class="modal-card glass">
+            <button class="modal-close" onclick="closeContactModal()" aria-label="Close">&times;</button>
+            <div class="modal-icon-box">
+                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            </div>
+            <h3 class="modal-title">${isFa ? 'بخش تماس در حال حاضر غیرفعال است' : 'Contact Form Currently Inactive'}</h3>
+            <p class="modal-text">
+                ${isFa 
+                    ? 'این بخش در حال حاضر کار نمی‌کند. در عوض می‌توانید از طریق شماره <strong>09039238316</strong> مستقیم با من در ارتباط باشید:' 
+                    : 'This contact form is currently unavailable. Instead, you can reach out directly via phone or WhatsApp:'}
+            </p>
+            <div class="modal-phone-box">
+                <a href="tel:09039238316" class="phone-number">09039238316</a>
+            </div>
+            <div class="modal-actions">
+                <a href="tel:09039238316" class="btn btn-primary modal-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <span>${isFa ? 'تماس تلفنی' : 'Call Now'}</span>
+                </a>
+                <a href="https://wa.me/989039238316" target="_blank" rel="noopener noreferrer" class="btn btn-outline modal-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                    <span>${isFa ? 'واتساپ' : 'WhatsApp'}</span>
+                </a>
+            </div>
+        </div>
+    `;
+    
+    setTimeout(() => modal.classList.add('active'), 10);
+
+    const escHandler = (e) => {
+        if (e.key === 'Escape') {
+            closeContactModal();
+            document.removeEventListener('keydown', escHandler);
+        }
+    };
+    document.addEventListener('keydown', escHandler);
+}
+
+function closeContactModal() {
+    const modal = document.getElementById('contact-modal');
+    if (modal) {
+        modal.classList.remove('active');
+    }
 }
 
 function showToast(message) {
