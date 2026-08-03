@@ -1270,7 +1270,14 @@ body.ltr .filter-btn {
     top: 0;
     left: 0;
     transform: translateY(0);
-    transition: top 5s ease-in-out, transform 5s ease-in-out;
+    transition: transform 6s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: transform;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+.portfolio-item:hover .project-img {
+    transform: translateY(calc(-100% + (100% * 9 / 16)));
 }
 
 .project-overlay {
@@ -1288,11 +1295,6 @@ body.ltr .filter-btn {
     transition: opacity var(--transition-normal);
     pointer-events: none;
     z-index: 5;
-}
-
-.portfolio-item:hover .project-img {
-    top: 100%;
-    transform: translateY(-100%);
 }
 
 .portfolio-item:hover .project-overlay {
