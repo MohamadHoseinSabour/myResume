@@ -1379,17 +1379,43 @@ body.ltr .timeline-details li::before {
     display: none;
 }
 
-/* Touch-Scrollable Preview Window */
-.project-img-box {
+/* Touch-Scrollable Preview Architecture */
+.project-preview-wrapper {
     position: relative;
     width: 100%;
     height: 380px;
+    background: #090c14;
+    overflow: hidden;
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* Pinned Shadow Overlay that fades out on scroll */
+.project-shadow-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(7, 9, 14, 0.45) 0%, transparent 22%, transparent 68%, rgba(7, 9, 14, 0.8) 100%);
+    pointer-events: none;
+    z-index: 4;
+    opacity: 1;
+    transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-preview-wrapper.is-scrolled .project-shadow-overlay,
+.project-preview-wrapper.is-scrolled .mobile-scroll-hint {
+    opacity: 0 !important;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.project-img-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
     background: #090c14;
     overflow-y: auto;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     touch-action: pan-y;
-    border-bottom: 1px solid var(--color-border);
     scrollbar-width: thin;
     scrollbar-color: rgba(0, 242, 254, 0.4) transparent;
 }
@@ -2429,7 +2455,7 @@ body.ltr .custom-modal .modal-close {
         gap: 24px;
     }
     
-    .project-img-box {
+    .project-preview-wrapper {
         height: 310px;
     }
     
@@ -2503,7 +2529,7 @@ body.ltr .custom-modal .modal-close {
         padding: 22px 16px;
     }
     
-    .project-img-box {
+    .project-preview-wrapper {
         height: 270px;
     }
     

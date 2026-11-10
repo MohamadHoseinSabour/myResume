@@ -626,12 +626,15 @@ function initPortfolioTouchAndAutoScroll() {
     const imgBoxes = document.querySelectorAll('.project-img-box');
     const autoscrollBtns = document.querySelectorAll('.btn-autoscroll');
 
-    // 1. Hide scroll hint once user manually scrolls inside the preview window
+    // 1. Fade out shadow overlay & hint once user scrolls inside the preview window
     imgBoxes.forEach(box => {
-        const hint = box.querySelector('.mobile-scroll-hint');
+        const wrapper = box.closest('.project-preview-wrapper');
+        
         box.addEventListener('scroll', () => {
-            if (box.scrollTop > 20 && hint && !hint.classList.contains('hidden')) {
-                hint.classList.add('hidden');
+            if (box.scrollTop > 15) {
+                if (wrapper) wrapper.classList.add('is-scrolled');
+            } else {
+                if (wrapper) wrapper.classList.remove('is-scrolled');
             }
         }, { passive: true });
 
@@ -660,9 +663,8 @@ function initPortfolioTouchAndAutoScroll() {
 }
 
 function startAutoScroll(box, btn) {
-    // Hide hint if visible
-    const hint = box.querySelector('.mobile-scroll-hint');
-    if (hint) hint.classList.add('hidden');
+    const wrapper = box.closest('.project-preview-wrapper');
+    if (wrapper) wrapper.classList.add('is-scrolled');
 
     btn.classList.add('active-autoscroll');
     const btnSpan = btn.querySelector('span');
@@ -725,6 +727,11 @@ function stopAutoScroll(box) {
             if (btnSpan) {
                 btnSpan.textContent = translations[currentLang]['btn_autoscroll'] || 'اسکرول خودکار';
             }
+        }
+
+        const wrapper = box.closest('.project-preview-wrapper');
+        if (wrapper && box.scrollTop <= 15) {
+            wrapper.classList.remove('is-scrolled');
         }
     }
 }
