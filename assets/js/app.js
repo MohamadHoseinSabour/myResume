@@ -626,15 +626,28 @@ function initPortfolioTouchAndAutoScroll() {
     const imgBoxes = document.querySelectorAll('.project-img-box');
     const autoscrollBtns = document.querySelectorAll('.btn-autoscroll');
 
-    // 1. Fade out shadow overlay & hint once user scrolls inside the preview window
+    // 1. Gradually fade out shadow overlay & hint as user scrolls inside the preview window
     imgBoxes.forEach(box => {
         const wrapper = box.closest('.project-preview-wrapper');
+        const shadowOverlay = wrapper ? wrapper.querySelector('.project-shadow-overlay') : null;
+        const hint = wrapper ? wrapper.querySelector('.mobile-scroll-hint') : null;
         
         box.addEventListener('scroll', () => {
-            if (box.scrollTop > 15) {
+            const st = box.scrollTop;
+            if (st > 50) {
                 if (wrapper) wrapper.classList.add('is-scrolled');
             } else {
                 if (wrapper) wrapper.classList.remove('is-scrolled');
+            }
+
+            // Gradual progressive fade-out between 0px and 60px of scroll
+            if (shadowOverlay) {
+                const ratio = Math.max(0, Math.min(1, 1 - (st / 60)));
+                shadowOverlay.style.opacity = ratio.toFixed(2);
+            }
+            if (hint) {
+                const hintRatio = Math.max(0, Math.min(1, 1 - (st / 40)));
+                hint.style.opacity = hintRatio.toFixed(2);
             }
         }, { passive: true });
 
@@ -664,7 +677,12 @@ function initPortfolioTouchAndAutoScroll() {
 
 function startAutoScroll(box, btn) {
     const wrapper = box.closest('.project-preview-wrapper');
+    const shadowOverlay = wrapper ? wrapper.querySelector('.project-shadow-overlay') : null;
+    const hint = wrapper ? wrapper.querySelector('.mobile-scroll-hint') : null;
+    
     if (wrapper) wrapper.classList.add('is-scrolled');
+    if (shadowOverlay) shadowOverlay.style.opacity = '0';
+    if (hint) hint.style.opacity = '0';
 
     btn.classList.add('active-autoscroll');
     const btnSpan = btn.querySelector('span');
@@ -730,8 +748,13 @@ function stopAutoScroll(box) {
         }
 
         const wrapper = box.closest('.project-preview-wrapper');
-        if (wrapper && box.scrollTop <= 15) {
+        const shadowOverlay = wrapper ? wrapper.querySelector('.project-shadow-overlay') : null;
+        const hint = wrapper ? wrapper.querySelector('.mobile-scroll-hint') : null;
+        
+        if (wrapper && box.scrollTop <= 12) {
             wrapper.classList.remove('is-scrolled');
+            if (shadowOverlay) shadowOverlay.style.opacity = '';
+            if (hint) hint.style.opacity = '';
         }
     }
 }

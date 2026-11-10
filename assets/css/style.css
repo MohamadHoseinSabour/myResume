@@ -1389,7 +1389,7 @@ body.ltr .timeline-details li::before {
     border-bottom: 1px solid var(--color-border);
 }
 
-/* Pinned Shadow Overlay that fades out on scroll */
+/* Pinned Shadow Overlay that fades out gradually on hover & scroll */
 .project-shadow-overlay {
     position: absolute;
     inset: 0;
@@ -1397,13 +1397,21 @@ body.ltr .timeline-details li::before {
     pointer-events: none;
     z-index: 4;
     opacity: 1;
-    transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.project-preview-wrapper.is-scrolled .project-shadow-overlay,
+/* Hover on card or preview wrapper gradually fades out shadow and scroll hint */
+.portfolio-item:hover .project-shadow-overlay,
+.project-preview-wrapper:hover .project-shadow-overlay,
+.project-preview-wrapper.is-scrolled .project-shadow-overlay {
+    opacity: 0 !important;
+    pointer-events: none;
+}
+
+.portfolio-item:hover .mobile-scroll-hint,
+.project-preview-wrapper:hover .mobile-scroll-hint,
 .project-preview-wrapper.is-scrolled .mobile-scroll-hint {
     opacity: 0 !important;
-    visibility: hidden;
     pointer-events: none;
 }
 
@@ -1520,11 +1528,11 @@ body.ltr .project-status-badge {
     50% { transform: translateX(-50%) translateY(-5px); }
 }
 
-/* Desktop Hover Overlay */
+/* Desktop Hover Overlay (Buttons Only, No Dark Vignette on Image) */
 .project-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(7, 9, 14, 0.1) 0%, rgba(7, 9, 14, 0.75) 100%);
+    background: transparent;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -1532,7 +1540,7 @@ body.ltr .project-status-badge {
     opacity: 0;
     transition: opacity var(--transition-normal);
     pointer-events: none;
-    z-index: 4;
+    z-index: 5;
 }
 
 .portfolio-item:hover .project-overlay {
