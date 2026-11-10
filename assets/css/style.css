@@ -542,8 +542,14 @@ body.menu-open {
 .hero-grid {
     display: grid;
     grid-template-columns: 1.15fr 0.85fr;
-    gap: 48px;
-    align-items: center;
+    gap: 28px 48px;
+    align-items: start;
+}
+
+/* Hero Full-Width Header (Spans above columns) */
+.hero-header {
+    grid-column: 1 / -1;
+    width: 100%;
 }
 
 .status-pill {
@@ -557,7 +563,7 @@ body.menu-open {
     color: var(--color-accent-emerald);
     font-size: 0.85rem;
     font-weight: 600;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 .status-dot {
@@ -575,12 +581,14 @@ body.menu-open {
 }
 
 .hero-title {
-    font-size: clamp(2.3rem, 5vw, 3.4rem);
+    font-size: clamp(1.2rem, 3.8vw, 3.4rem);
     font-weight: 900;
     line-height: 1.25;
     color: var(--color-text-primary);
-    margin-bottom: 16px;
+    margin-bottom: 0;
     letter-spacing: -0.02em;
+    white-space: nowrap;
+    width: 100%;
 }
 
 .hero-subtitle {
@@ -2526,7 +2534,7 @@ body.ltr .custom-modal .modal-close {
     }
     
     .hero-title {
-        font-size: 2rem;
+        font-size: clamp(1.15rem, 5.2vw, 1.45rem);
     }
     
     .bento-card {
