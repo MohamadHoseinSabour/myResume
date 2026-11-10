@@ -1,50 +1,66 @@
 /* ==========================================================================
-   BILINGUAL DICTIONARY (FA / EN)
+   MOHAMADHOSEIN SABOUR - INTERACTIVE SCRIPT SYSTEM 2026
+   Bilingual Engine • Mobile Auto-Scroll • Lightbox • UX Micro-Interactions
+   ========================================================================== */
+
+/* ==========================================================================
+   BILINGUAL TRANSLATION DICTIONARY (FA / EN)
    ========================================================================== */
 const translations = {
     fa: {
-        // Navbar
+        // Navigation
         nav_menu_title: "منوی دسترسی",
+        nav_designer_dev: "طراح و توسعه‌دهنده وب",
         nav_home: "خانه",
         nav_about: "درباره من",
         nav_skills: "مهارت‌ها",
         nav_experience: "سوابق کاری",
         nav_portfolio: "پورتفولیو",
         nav_contact: "تماس",
+        btn_call_direct: "تماس مستقیم",
 
         // Hero
+        hero_status: "آماده برای خلق ایده‌های نو و پروژه‌های فریلنسری",
         hero_badge: "آماده برای خلق ایده‌های نو",
         hero_greetings: "سلام، من",
         hero_name: "محمدحسین صبور",
         hero_greetings_end: "هستم",
-        hero_desc: "طراح گرافیک و توسعه‌دهنده وب، متمرکز بر طراحی رابط‌های کاربری مدرن، مینیمال و کاربرپسند. تبدیل ایده‌های پیچیده به تجربیات دیجیتال فراموش‌نشدنی.",
+        hero_desc: "طراح گرافیک و توسعه‌دهنده وب، متمرکز بر خلق رابط‌های کاربری مدرن، مینیمال و کاربرپسند. تبدیل ایده‌های پیچیده به تجربیات دیجیتال فراموش‌نشدنی با تلفیق هنر بصری و استانداردهای مهندسی وب.",
         hero_cta_projects: "مشاهده نمونه‌کارها",
         hero_cta_contact: "همکاری با من",
+        about_metric_exp: "سال سابقه تخصصی",
+        about_metric_proj: "پروژه موفق وب",
+        stat_satisfaction: "تعهد و کیفیت تحویل",
+        scroll_down: "اسکرول کنید",
 
         // About
         about_title: "درباره من",
-        about_subtitle: "داستان من و مسیر شغلی‌ام",
-        about_metric_exp: "سال سابقه",
-        about_metric_proj: "پروژه موفق",
+        about_subtitle: "داستان من، دیدگاه دیزاین و مسیر حرفه‌ای",
+        about_badge: "خلق تمایز دیجیتال",
         about_header: "خلق هویت بصری متمایز در دنیای دیجیتال",
-        about_desc: "من یک طراح و گرافیست وب هستم که همیشه مشتاق روبه‌رو شدن با چالش‌های جدید و خلق تجربه‌های بصری متمایز در دنیای دیجیتالم. باور دارم که ترکیب خلاقیت با یک طراحی هدفمند، تمیز و ساختاریافته، نه‌تنها ظاهر سایت را زیبا می‌کند، بلکه ارتباط موثری بین کاربر و محصول می‌سازد. هدف من تبدیل ایدههای پیچیده به رابطهای کاربری چشمنواز، مینیمال و کاربرپسند است.",
-        about_info_edu: "تحصیلات:",
+        about_desc: "من یک طراح و گرافیست وب هستم که همیشه مشتاق روبه‌رو شدن با چالش‌های جدید و خلق تجربه‌های بصری متمایز در دنیای دیجیتالم. باور دارم که ترکیب خلاقیت با یک طراحی هدفمند، تمیز و ساختاریافته، نه‌تنها ظاهر سایت را زیبا می‌کند، بلکه ارتباط موثری بین کاربر و محصول می‌سازد. هدف من تبدیل ایده‌های پیچیده به رابط‌های کاربری چشم‌نواز، مینیمال و کاربرپسند است.",
+        about_info_edu: "تحصیلات آکادمیک",
         about_info_edu_val: "کارشناسی مهندسی برق (دانشگاه شهید چمران اهواز - ۱۴۰۲ تا کنون)",
-        about_info_lang: "زبان‌ها:",
-        about_info_lang_val: "فارسی (زبان مادری) | انگلیسی (آشنایی پایه برای مستندات و پروژه‌ها)",
+        about_info_lang: "زبان‌های ارتباطی",
+        lang_persian: "فارسی (زبان مادری)",
+        lang_native: "بومی ۱۰۰٪",
+        lang_english: "انگلیسی (فنی و مستندات)",
+        lang_technical: "روان و کاری",
+        about_connect_title: "آماده شروع همکاری هستید؟",
+        about_connect_desc: "می‌توانید نسخه خلاصه رزومه من را دریافت کنید یا بلافاصله پیام بفرستید.",
         about_cta_hire: "دعوت به همکاری",
         about_cta_cv: "دانلود رزومه",
 
         // Skills
         skills_title: "مهارت‌ها و ابزارها",
-        skills_subtitle: "تخصص‌های فنی و نرم‌افزارهای طراحی",
+        skills_subtitle: "تخصص‌های فنی، نرم‌افزارهای طراحی و ابزارهای هوش مصنوعی",
         skills_cat_dev: "توسعه وب",
         skills_cat_design: "طراحی و رابط کاربری",
-        skills_cat_tools: "ابزارهای فنی",
+        skills_cat_tools: "ابزارها و استانداردها",
 
         // Timeline
         timeline_title: "مسیر شغلی و تحصیلی",
-        timeline_subtitle: "سوابق کاری و تحصیلات دانشگاهی",
+        timeline_subtitle: "سوابق کاری تخصصی و تحصیلات دانشگاهی",
         time_present: "اکنون",
         exp1_date: "1404 - اکنون",
         exp2_date: "1403 - اکنون",
@@ -66,27 +82,31 @@ const translations = {
         
         exp3_title: "گرافیست وب",
         exp3_company: "سایت نخل مارکت",
-        exp3_d1: "طراحی المان‌های گرافیکی و خلق هویت بصری یکپارچه برای وب‌سایت.",
-        exp3_d2: "بهینه‌سازی ظاهر سایت برای ارتقای تعامل کاربران و یکپارچگی بصری.",
+        exp3_d1: "طراحی المان‌های گرافیکی و خلق هویت بصری یکپارچه برای پلتفرم فروشگاهی.",
+        exp3_d2: "بهینه‌سازی ظاهر سایت برای ارتقای تعامل کاربران، بهبود نرخ کلیک و یکپارچگی بصری.",
         
         edu1_title: "کارشناسی مهندسی برق",
-        edu1_school: "دانشگاه شهید چمران اهواز (۱۴۰۲ - تاکنون)",
-        edu1_desc: "تحصیل در رشته مهندسی برق به عنوان بستر مناسب تقویت تفکر تحلیلی و حل مسئله در مسائل پیچیده.",
+        edu1_school: "دانشگاه شهید چمران اهواز",
+        edu1_desc: "تحصیل در گرایش مهندسی برق به عنوان بستر مناسب تقویت تفکر تحلیلی و حل مسئله در مسائل پیچیده مهندسی و نرم‌افزاری.",
 
         exp4_title: "متخصص محتوای بصری و هوش مصنوعی",
         exp4_company: "مجموعه اینتاپاسو (۳ سال همکاری)",
-        exp4_d1: "بهره‌گیری از ابزارهای هوش مصنوعی و تدوین ویدیو برای خلق محتوای دیجیتال متمایز.",
-        exp4_d2: "طراح گرافیک و ادیتور شبکه‌های اجتماعی و طراحی لی‌اوت پیج‌ها بر اساس نیاز مخاطبان دیجیتال.",
+        exp4_d1: "بهره‌گیری از ابزارهای پیشرفته هوش مصنوعی و تدوین ویدیو برای خلق محتوای دیجیتال متمایز و پیشرو.",
+        exp4_d2: "طراحی چیدمان بصری و ادیتور شبکه‌های اجتماعی با شناخت دقیق از رفتار و نیازهای مخاطبان دیجیتال.",
 
         // Portfolio
         portfolio_title: "نمونه‌کارها",
-        portfolio_demo: "",
-        portfolio_subtitle: "منتخبی از آخرین طراحی‌ها و پروژه‌های من",
+        portfolio_subtitle: "منتخبی از آخرین طراحی‌ها، افزونه‌ها و پروژه‌های وب من",
         filter_all: "همه",
         filter_ai: "افزونه و هوش مصنوعی",
         filter_web: "توسعه وب و فروشگاهی",
-        view_project: "مشاهده وب‌سایت",
         badge_live: "پروژه فعال",
+        hint_touch_scroll: "لمس و اسکرول برای مشاهده کل صفحه",
+        btn_autoscroll: "اسکرول خودکار",
+        btn_autoscroll_stop: "توقف اسکرول",
+        btn_fullscreen: "نمای کامل",
+        view_project: "مشاهده آنلاین",
+        lightbox_scroll_hint: "برای مشاهده کل پروژه به پایین اسکرول کنید",
         
         proj1_cat: "افزونه وردپرس و هوش مصنوعی",
         proj1_title: "سایت معرفی و افزونه هوش مصنوعی چت‌نگار",
@@ -110,15 +130,19 @@ const translations = {
 
         // Contact
         contact_title: "تماس با من",
-        contact_subtitle: "بیایید با هم پروژه جدیدی را شروع کنیم",
+        contact_subtitle: "بیایید گفتگوی خلاقانه را شروع کنیم؛ آماده همکاری و اجرای پروژه‌های نو",
         contact_panel_title: "ارتباط مستقیم",
         contact_panel_desc: "برای گفتگو درباره همکاری، استخدام یا فقط گپ زدن در حوزه دیزاین و برنامه‌نویسی با من در تماس باشید.",
-        contact_email: "ایمیل",
-        contact_phone: "شماره تلفن",
+        contact_email: "آدرس ایمیل",
+        contact_phone: "شماره تلفن مستقیم",
         contact_phone_val: "09039238316",
-        contact_location: "موقعیت",
-        contact_location_val: "ایران ، خوزستان ، اهواز ، آخرسفالت ، خیابان زارع پلاک 4",
-        contact_social: "شبکه‌های اجتماعی",
+        btn_copy: "کپی",
+        btn_copied: "کپی شد! ✓",
+        toast_copied: "شماره با موفقیت کپی شد!",
+        toast_code_copied: "کانتکست کد کپی شد!",
+        contact_location: "موقعیت کاری",
+        contact_location_val: "اهواز، ایران (فعال در پروژه‌های دورکاری)",
+        contact_social: "شبکه‌های اجتماعی و پیام‌رسان‌ها",
         
         form_name_lbl: "نام و نام‌خانوادگی",
         form_email_lbl: "آدرس ایمیل",
@@ -131,47 +155,58 @@ const translations = {
         form_message_placeholder: "پیام خود را بنویسید...",
 
         // Footer
-        footer_rights: "تمامی حقوق برای محمدحسین محفوظ است. طراحی با عشق."
+        footer_rights: "تمامی حقوق برای محمدحسین صبور محفوظ است. طراحی با عشق و کدنویسی استاندارد."
     },
     en: {
-        // Navbar
+        // Navigation
         nav_menu_title: "Navigation",
+        nav_designer_dev: "Web Designer & Developer",
         nav_home: "Home",
         nav_about: "About Me",
         nav_skills: "Skills",
         nav_experience: "Experience",
         nav_portfolio: "Portfolio",
         nav_contact: "Contact",
+        btn_call_direct: "Direct Call",
 
         // Hero
+        hero_status: "Open for innovative ideas & freelance projects",
         hero_badge: "Ready to Create Innovative Ideas",
         hero_greetings: "Hi, I am",
         hero_name: "MohamadHosein Sabour",
         hero_greetings_end: "",
-        hero_desc: "Web Developer and Graphic Designer focusing on crafting clean, minimal, and user-centric interfaces. Turning complex concepts into memorable digital experiences.",
+        hero_desc: "Web Developer and Graphic Designer focusing on crafting clean, minimal, and user-centric interfaces. Turning complex concepts into memorable digital experiences by combining visual artistry with web engineering standards.",
         hero_cta_projects: "View My Works",
         hero_cta_contact: "Let's Connect",
+        about_metric_exp: "Years Experience",
+        about_metric_proj: "Completed Web Projects",
+        stat_satisfaction: "Commitment & Quality Delivery",
+        scroll_down: "Scroll Down",
 
         // About
         about_title: "About Me",
-        about_subtitle: "My Story & Career Path",
-        about_metric_exp: "Years Experience",
-        about_metric_proj: "Completed Projects",
+        about_subtitle: "My Story, Design Philosophy & Professional Journey",
+        about_badge: "Digital Differentiation",
         about_header: "Crafting Distinct Visual Identities in the Digital World",
         about_desc: "I am a web designer and graphic artist passionate about tackling new challenges and creating unique visual experiences. I believe blending creativity with a purposeful, structured design not only makes websites look stunning but also forms effective connections between users and products. My goal is to simplify complex ideas into elegant, minimal, and user-friendly user interfaces.",
-        about_info_edu: "Education:",
+        about_info_edu: "Academic Education",
         about_info_edu_val: "B.Sc. in Electrical Engineering (Shahid Chamran University - 2023 to Present)",
-        about_info_lang: "Languages:",
-        about_info_lang_val: "Persian (Native) | English (Basic / Technical)",
+        about_info_lang: "Languages & Communication",
+        lang_persian: "Persian (Native)",
+        lang_native: "Native 100%",
+        lang_english: "English (Technical & Docs)",
+        lang_technical: "Professional & Fluent",
+        about_connect_title: "Ready to Start Collaboration?",
+        about_connect_desc: "Feel free to download my CV summary or drop me a line right away.",
         about_cta_hire: "Hire Me",
         about_cta_cv: "Download CV",
 
         // Skills
         skills_title: "Skills & Tools",
-        skills_subtitle: "Technical expertise and design software",
+        skills_subtitle: "Technical expertise, UI/UX software & modern AI generation tools",
         skills_cat_dev: "Web Development",
         skills_cat_design: "UI/UX & Design",
-        skills_cat_tools: "Technical Tools",
+        skills_cat_tools: "Tools & Methodologies",
 
         // Timeline
         timeline_title: "Career & Education",
@@ -198,10 +233,10 @@ const translations = {
         exp3_title: "Web Graphic Designer",
         exp3_company: "Nakhl Market E-Commerce",
         exp3_d1: "Created graphic layout elements and established a cohesive brand visual identity for the platform.",
-        exp3_d2: "Optimized website layout assets to improve user engagement metrics and visual harmony.",
+        exp3_d2: "Optimized website layout assets to improve user engagement metrics, CTR and visual harmony.",
         
         edu1_title: "B.Sc. in Electrical Engineering",
-        edu1_school: "Shahid Chamran University of Ahvaz (2023 - Present)",
+        edu1_school: "Shahid Chamran University of Ahvaz",
         edu1_desc: "Studying Electrical Engineering, fostering solid analytical reasoning and problem-solving structures for complex projects.",
 
         exp4_title: "Visual Content & AI Specialist",
@@ -211,13 +246,17 @@ const translations = {
 
         // Portfolio
         portfolio_title: "Portfolio",
-        portfolio_demo: "",
-        portfolio_subtitle: "A selection of my latest designs and projects",
+        portfolio_subtitle: "A selection of my latest designs, plugins and web projects",
         filter_all: "All",
         filter_ai: "AI & Plugins",
         filter_web: "Web & E-Commerce",
-        view_project: "View Live Project",
         badge_live: "Live Project",
+        hint_touch_scroll: "Touch & scroll to explore full page",
+        btn_autoscroll: "Auto Scroll",
+        btn_autoscroll_stop: "Stop Scroll",
+        btn_fullscreen: "Fullscreen",
+        view_project: "View Live",
+        lightbox_scroll_hint: "Scroll down to view entire project preview",
         
         proj1_cat: "WordPress Plugin & AI",
         proj1_title: "ChatNegar AI Plugin & Landing Site",
@@ -241,15 +280,19 @@ const translations = {
 
         // Contact
         contact_title: "Get In Touch",
-        contact_subtitle: "Let's collaborate on your next digital product",
+        contact_subtitle: "Let's start a creative discussion; open for collaboration & fresh projects",
         contact_panel_title: "Direct Channels",
         contact_panel_desc: "Feel free to reach out for design contracts, full-time opportunities, or just code/graphics chit-chat.",
-        contact_email: "Email",
-        contact_phone: "Phone Number",
+        contact_email: "Email Address",
+        contact_phone: "Direct Phone Number",
         contact_phone_val: "+98 903 923 8316",
-        contact_location: "Location",
-        contact_location_val: "No. 4, Zare St., Akher Asfalt, Ahvaz, Khuzestan, Iran",
-        contact_social: "Social Media",
+        btn_copy: "Copy",
+        btn_copied: "Copied! ✓",
+        toast_copied: "Phone number copied to clipboard!",
+        toast_code_copied: "Code context copied to clipboard!",
+        contact_location: "Working Location",
+        contact_location_val: "Ahvaz, Iran (Active in Remote Projects)",
+        contact_social: "Social Media & Messengers",
         
         form_name_lbl: "Full Name",
         form_email_lbl: "Email Address",
@@ -262,7 +305,7 @@ const translations = {
         form_message_placeholder: "Write your message here...",
 
         // Footer
-        footer_rights: "All rights reserved for MohamadHosein. Designed with love."
+        footer_rights: "All rights reserved for MohamadHosein Sabour. Crafted with passion & clean code."
     }
 };
 
@@ -277,6 +320,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initCustomCursor();
     initScrollReveal();
     initPortfolioFilters();
+    initPortfolioTouchAndAutoScroll();
+    initLightbox();
+    initClipboardCopy();
     initContactForm();
     initTypewriter();
     initYear();
@@ -299,8 +345,6 @@ function initLanguage() {
             currentLang = currentLang === 'fa' ? 'en' : 'fa';
             localStorage.setItem('portfolio_lang', currentLang);
             applyLanguage(currentLang);
-            
-            // Re-trigger typewriter for new language
             resetTypewriter();
         });
     }
@@ -333,7 +377,7 @@ function applyLanguage(lang) {
     const elements = document.querySelectorAll('[data-i18n]');
     elements.forEach(element => {
         const key = element.getAttribute('data-i18n');
-        if (translations[lang][key]) {
+        if (translations[lang] && translations[lang][key]) {
             element.textContent = translations[lang][key];
         }
     });
@@ -344,10 +388,10 @@ function applyLanguage(lang) {
     const subjectInput = document.getElementById('form-subject');
     const messageInput = document.getElementById('form-message');
 
-    if (nameInput) nameInput.placeholder = translations[lang]['form_name_placeholder'];
-    if (emailInput) emailInput.placeholder = translations[lang]['form_email_placeholder'];
-    if (subjectInput) subjectInput.placeholder = translations[lang]['form_subject_placeholder'];
-    if (messageInput) messageInput.placeholder = translations[lang]['form_message_placeholder'];
+    if (nameInput && translations[lang]['form_name_placeholder']) nameInput.placeholder = translations[lang]['form_name_placeholder'];
+    if (emailInput && translations[lang]['form_email_placeholder']) emailInput.placeholder = translations[lang]['form_email_placeholder'];
+    if (subjectInput && translations[lang]['form_subject_placeholder']) subjectInput.placeholder = translations[lang]['form_subject_placeholder'];
+    if (messageInput && translations[lang]['form_message_placeholder']) messageInput.placeholder = translations[lang]['form_message_placeholder'];
 }
 
 /* ==========================================================================
@@ -366,25 +410,22 @@ function initTypewriter() {
     if (!typedTextSpan) return;
 
     if (isDeleting) {
-        // Erase character
         typedTextSpan.textContent = currentWord.substring(0, charIndex - 1);
         charIndex--;
     } else {
-        // Type character
         typedTextSpan.textContent = currentWord.substring(0, charIndex + 1);
         charIndex++;
     }
 
-    let typeSpeed = isDeleting ? 40 : 100;
+    let typeSpeed = isDeleting ? 40 : 90;
 
-    // Word complete typed
     if (!isDeleting && charIndex === currentWord.length) {
-        typeSpeed = 2000; // Wait before deleting
+        typeSpeed = 2200; // Pause at end of word
         isDeleting = true;
     } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
-        typeIndex = (typeIndex + 1) % words.length; // Next word
-        typeSpeed = 500; // Wait before starting next word
+        typeIndex = (typeIndex + 1) % words.length;
+        typeSpeed = 400;
     }
 
     typewriterTimeout = setTimeout(initTypewriter, typeSpeed);
@@ -400,7 +441,7 @@ function resetTypewriter() {
 }
 
 /* ==========================================================================
-   SMOOTH CUSTOM CURSOR
+   SMOOTH CUSTOM CURSOR (DESKTOP)
    ========================================================================== */
 function initCustomCursor() {
     const dot = document.querySelector('.custom-cursor-dot');
@@ -410,10 +451,9 @@ function initCustomCursor() {
 
     let mouseX = 0, mouseY = 0;
     let outlineX = 0, outlineY = 0;
-    const speed = 0.16; // Interpolation speed
+    const speed = 0.16;
     let isMoving = false;
 
-    // Track mouse coordinate
     document.addEventListener('mousemove', (e) => {
         mouseX = e.clientX;
         mouseY = e.clientY;
@@ -428,14 +468,12 @@ function initCustomCursor() {
         dot.style.top = mouseY + 'px';
     });
 
-    // Hide cursor when leaving page
     document.addEventListener('mouseleave', () => {
         dot.style.opacity = '0';
         outline.style.opacity = '0';
         isMoving = false;
     });
 
-    // Smooth outline interpolation loop
     function updateOutline() {
         outlineX += (mouseX - outlineX) * speed;
         outlineY += (mouseY - outlineY) * speed;
@@ -447,20 +485,15 @@ function initCustomCursor() {
     }
     updateOutline();
 
-    // Elements triggers cursor expand
-    const interactiveElements = document.querySelectorAll('a, button, input, textarea, .filter-btn, .portfolio-item');
+    const interactiveElements = document.querySelectorAll('a, button, input, textarea, .filter-btn, .portfolio-item, .bento-card, .skill-tile');
     interactiveElements.forEach(el => {
-        el.addEventListener('mouseenter', () => {
-            document.body.classList.add('cursor-hover');
-        });
-        el.addEventListener('mouseleave', () => {
-            document.body.classList.remove('cursor-hover');
-        });
+        el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+        el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
     });
 }
 
 /* ==========================================================================
-   MOBILE MENU DRAWER
+   MOBILE MENU DRAWER & NAVIGATION
    ========================================================================== */
 function initMobileMenu() {
     const menuToggle = document.getElementById('menu-toggle');
@@ -494,63 +527,41 @@ function initMobileMenu() {
         }
     }
 
-    // Toggle button
     menuToggle.addEventListener('click', toggleMenu);
 
-    // Dedicated Drawer Close Button
-    if (drawerClose) {
-        drawerClose.addEventListener('click', closeMenu);
-    }
+    if (drawerClose) drawerClose.addEventListener('click', closeMenu);
+    if (navBackdrop) navBackdrop.addEventListener('click', closeMenu);
 
-    // Backdrop click
-    if (navBackdrop) {
-        navBackdrop.addEventListener('click', closeMenu);
-    }
-
-    // Close when clicking nav-link
     navLinks.forEach(link => {
         link.addEventListener('click', closeMenu);
     });
 
-    // Close when clicking outside drawer
-    document.addEventListener('click', (e) => {
-        if (navMenu.classList.contains('open') && 
-            !navMenu.contains(e.target) && 
-            !menuToggle.contains(e.target)) {
-            closeMenu();
-        }
-    });
-
-    // ESC key closes mobile menu
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && navMenu.classList.contains('open')) {
             closeMenu();
         }
     });
 
-    // Scroll active link highlight & header scroll effect
+    // Header scroll background toggle & active link tracking
     const header = document.getElementById('main-header');
     const sections = document.querySelectorAll('section');
 
     window.addEventListener('scroll', () => {
-        // Header background toggle on scroll
-        if (window.scrollY > 50) {
+        if (window.scrollY > 40) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
         }
 
-        // Active link tracking
         let scrollY = window.pageYOffset;
-        
         sections.forEach(current => {
             const sectionHeight = current.offsetHeight;
-            const sectionTop = current.offsetTop - 120;
+            const sectionTop = current.offsetTop - 140;
             const sectionId = current.getAttribute('id');
             
             if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
                 document.querySelector('.nav-link.active')?.classList.remove('active');
-                document.querySelector(`.nav-link[href*=${sectionId}]`)?.classList.add('active');
+                document.querySelector(`.nav-link[href*="${sectionId}"]`)?.classList.add('active');
             }
         });
     });
@@ -562,46 +573,23 @@ function initMobileMenu() {
 function initScrollReveal() {
     const revealElements = document.querySelectorAll('.scroll-reveal');
 
-    const observerOptions = {
-        root: null,
-        threshold: 0.15,
-        rootMargin: '0px'
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries, observerInstance) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('revealed');
-                
-                // If it is the skills section, animate skill meters
-                if (entry.target.id === 'skills') {
-                    animateSkillBars();
-                }
-                
-                observer.unobserve(entry.target); // Trigger once
+                observerInstance.unobserve(entry.target);
             }
         });
-    }, observerOptions);
-
-    revealElements.forEach(el => {
-        observer.observe(el);
+    }, {
+        threshold: 0.12,
+        rootMargin: '0px'
     });
-}
 
-function animateSkillBars() {
-    const progressBars = document.querySelectorAll('.skill-progress');
-    progressBars.forEach(bar => {
-        // Triggers the transition defined in CSS
-        const width = bar.style.width;
-        bar.style.width = '0%';
-        setTimeout(() => {
-            bar.style.width = width;
-        }, 100);
-    });
+    revealElements.forEach(el => observer.observe(el));
 }
 
 /* ==========================================================================
-   PORTFOLIO CATEGORIES FILTER
+   PORTFOLIO FILTERS
    ========================================================================== */
 function initPortfolioFilters() {
     const filterButtons = document.querySelectorAll('.filter-btn');
@@ -611,7 +599,6 @@ function initPortfolioFilters() {
 
     filterButtons.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Toggle active button
             document.querySelector('.filter-btn.active')?.classList.remove('active');
             btn.classList.add('active');
 
@@ -619,7 +606,6 @@ function initPortfolioFilters() {
 
             portfolioItems.forEach(item => {
                 const category = item.getAttribute('data-category');
-
                 if (filterValue === 'all' || (category && category.includes(filterValue))) {
                     item.classList.remove('hidden');
                 } else {
@@ -631,35 +617,249 @@ function initPortfolioFilters() {
 }
 
 /* ==========================================================================
-   CONTACT FORM HANDLER & MODAL POPUP
+   PORTFOLIO TOUCH-SCROLL & AUTO-SCROLL CONTROLLER
+   Fixes: Images now scroll effortlessly on Mobile touch & via Auto-Scroll!
+   ========================================================================== */
+const activeScrollAnimations = new Map();
+
+function initPortfolioTouchAndAutoScroll() {
+    const imgBoxes = document.querySelectorAll('.project-img-box');
+    const autoscrollBtns = document.querySelectorAll('.btn-autoscroll');
+
+    // 1. Hide scroll hint once user manually scrolls inside the preview window
+    imgBoxes.forEach(box => {
+        const hint = box.querySelector('.mobile-scroll-hint');
+        box.addEventListener('scroll', () => {
+            if (box.scrollTop > 20 && hint && !hint.classList.contains('hidden')) {
+                hint.classList.add('hidden');
+            }
+        }, { passive: true });
+
+        // Stop any active auto-scroll if user touches or wheels the preview box
+        box.addEventListener('touchstart', () => stopAutoScroll(box), { passive: true });
+        box.addEventListener('wheel', () => stopAutoScroll(box), { passive: true });
+    });
+
+    // 2. Auto-Scroll Controller button
+    autoscrollBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const boxId = btn.getAttribute('data-box');
+            const targetBox = document.getElementById(boxId);
+            if (!targetBox) return;
+
+            if (activeScrollAnimations.has(targetBox)) {
+                // If currently running, stop it
+                stopAutoScroll(targetBox);
+            } else {
+                // Start smooth auto-scrolling
+                startAutoScroll(targetBox, btn);
+            }
+        });
+    });
+}
+
+function startAutoScroll(box, btn) {
+    // Hide hint if visible
+    const hint = box.querySelector('.mobile-scroll-hint');
+    if (hint) hint.classList.add('hidden');
+
+    btn.classList.add('active-autoscroll');
+    const btnSpan = btn.querySelector('span');
+    if (btnSpan) {
+        btnSpan.textContent = translations[currentLang]['btn_autoscroll_stop'] || 'توقف اسکرول';
+    }
+
+    let direction = 1; // 1 = scrolling down, -1 = scrolling up
+    let speed = 2.5; // pixels per frame
+    let isPaused = false;
+    let pauseTimer = null;
+
+    function step() {
+        if (isPaused) {
+            const animId = requestAnimationFrame(step);
+            activeScrollAnimations.set(box, { animId, btn });
+            return;
+        }
+
+        const maxScroll = box.scrollHeight - box.clientHeight;
+
+        if (direction === 1) {
+            box.scrollTop += speed;
+            if (box.scrollTop >= maxScroll - 2) {
+                // Reached bottom, pause then reverse
+                isPaused = true;
+                pauseTimer = setTimeout(() => {
+                    direction = -1;
+                    speed = 4.0; // scroll back up a bit faster
+                    isPaused = false;
+                }, 1400);
+            }
+        } else {
+            box.scrollTop -= speed;
+            if (box.scrollTop <= 2) {
+                // Reached top again, finish animation
+                stopAutoScroll(box);
+                return;
+            }
+        }
+
+        const animId = requestAnimationFrame(step);
+        activeScrollAnimations.set(box, { animId, btn, pauseTimer });
+    }
+
+    const animId = requestAnimationFrame(step);
+    activeScrollAnimations.set(box, { animId, btn, pauseTimer });
+}
+
+function stopAutoScroll(box) {
+    if (activeScrollAnimations.has(box)) {
+        const { animId, btn, pauseTimer } = activeScrollAnimations.get(box);
+        cancelAnimationFrame(animId);
+        if (pauseTimer) clearTimeout(pauseTimer);
+        activeScrollAnimations.delete(box);
+
+        if (btn) {
+            btn.classList.remove('active-autoscroll');
+            const btnSpan = btn.querySelector('span');
+            if (btnSpan) {
+                btnSpan.textContent = translations[currentLang]['btn_autoscroll'] || 'اسکرول خودکار';
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   FULLSCREEN LIGHTBOX MODAL
+   ========================================================================== */
+function initLightbox() {
+    const lightbox = document.getElementById('preview-lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxTitle = document.getElementById('lightbox-title');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const lightboxBackdrop = document.getElementById('lightbox-backdrop');
+    const openButtons = document.querySelectorAll('.btn-open-lightbox');
+
+    if (!lightbox || !lightboxImg) return;
+
+    function openLightbox(imgSrc, title) {
+        lightboxImg.src = imgSrc;
+        if (lightboxTitle) lightboxTitle.textContent = title || (currentLang === 'fa' ? 'پیش‌نمایش کامل' : 'Full Preview');
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+        setTimeout(() => {
+            lightboxImg.src = '';
+        }, 300);
+    }
+
+    openButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const imgSrc = btn.getAttribute('data-img');
+            const title = btn.getAttribute('data-title');
+            if (imgSrc) {
+                openLightbox(imgSrc, title);
+            }
+        });
+    });
+
+    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+    if (lightboxBackdrop) lightboxBackdrop.addEventListener('click', closeLightbox);
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
+}
+
+/* ==========================================================================
+   CLIPBOARD & TOAST NOTIFICATION
+   ========================================================================== */
+function initClipboardCopy() {
+    const copyPhoneBtn = document.getElementById('copy-phone-btn');
+    const copyCodeBtn = document.getElementById('copy-code-btn');
+
+    if (copyPhoneBtn) {
+        copyPhoneBtn.addEventListener('click', () => {
+            const phone = "09039238316";
+            navigator.clipboard.writeText(phone).then(() => {
+                const span = copyPhoneBtn.querySelector('span');
+                const orig = span ? span.textContent : "";
+                if (span) span.textContent = translations[currentLang]['btn_copied'] || "کپی شد! ✓";
+                showToast(translations[currentLang]['toast_copied'] || "شماره با موفقیت کپی شد!");
+                setTimeout(() => {
+                    if (span) span.textContent = orig;
+                }, 2000);
+            }).catch(() => {
+                showToast("09039238316");
+            });
+        });
+    }
+
+    if (copyCodeBtn) {
+        copyCodeBtn.addEventListener('click', () => {
+            const codeSnippet = `const creator = {
+  name: 'MohamadHosein Sabour',
+  role: 'Web Developer & Graphic Designer',
+  stack: ['React', 'WordPress', 'Figma', 'AI Tools'],
+  focus: 'Clean Code & High-Impact UI',
+  openToWork: true,
+  getInTouch: () => '09039238316'
+};`;
+            navigator.clipboard.writeText(codeSnippet).then(() => {
+                showToast(translations[currentLang]['toast_code_copied'] || "کانتکست کد کپی شد!");
+            });
+        });
+    }
+}
+
+function showToast(message) {
+    let toast = document.getElementById('toast');
+    if (!toast) return;
+
+    toast.textContent = message;
+    toast.classList.add('active');
+
+    setTimeout(() => {
+        toast.classList.remove('active');
+    }, 3200);
+}
+
+/* ==========================================================================
+   CONTACT FORM & FALLBACK MODAL
    ========================================================================== */
 function initContactForm() {
     const form = document.getElementById('contact-form');
-    
     if (!form) return;
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        // Visual loader inside submit button
         const submitBtn = form.querySelector('.submit-btn');
-        const originalText = submitBtn.querySelector('span').textContent;
-        submitBtn.querySelector('span').textContent = currentLang === 'fa' ? 'درحال پردازش...' : 'Processing...';
-        submitBtn.style.opacity = '0.7';
-        submitBtn.disabled = true;
+        const span = submitBtn ? submitBtn.querySelector('span') : null;
+        const originalText = span ? span.textContent : "";
+
+        if (span) span.textContent = currentLang === 'fa' ? 'درحال پردازش...' : 'Processing...';
+        if (submitBtn) {
+            submitBtn.style.opacity = '0.7';
+            submitBtn.disabled = true;
+        }
 
         setTimeout(() => {
-            // Restore button
-            submitBtn.querySelector('span').textContent = originalText;
-            submitBtn.style.opacity = '1';
-            submitBtn.disabled = false;
-            
-            // Show Contact Inactive Modal Popup
+            if (span) span.textContent = originalText;
+            if (submitBtn) {
+                submitBtn.style.opacity = '1';
+                submitBtn.disabled = false;
+            }
             showContactModal();
-            
-            // Clear inputs
             form.reset();
-        }, 600);
+        }, 500);
     });
 }
 
@@ -679,13 +879,13 @@ function showContactModal() {
         <div class="modal-card glass">
             <button class="modal-close" onclick="closeContactModal()" aria-label="Close">&times;</button>
             <div class="modal-icon-box">
-                <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
             </div>
-            <h3 class="modal-title">${isFa ? 'بخش تماس در حال حاضر غیرفعال است' : 'Contact Form Currently Inactive'}</h3>
+            <h3 class="modal-title">${isFa ? 'بخش تماس فرم در حال حاضر غیرفعال است' : 'Contact Form Inactive'}</h3>
             <p class="modal-text">
                 ${isFa 
-                    ? 'این بخش در حال حاضر کار نمی‌کند. در عوض می‌توانید از طریق شماره <strong>09039238316</strong> مستقیم با من در ارتباط باشید:' 
-                    : 'This contact form is currently unavailable. Instead, you can reach out directly via phone or WhatsApp:'}
+                    ? 'برای ارتباط سریع‌تر و مستقیم، می‌توانید از طریق تماس یا واتساپ با من در ارتباط باشید:' 
+                    : 'For immediate response, please connect directly via phone call or WhatsApp:'}
             </p>
             <div class="modal-phone-box">
                 <a href="tel:09039238316" class="phone-number">09039238316</a>
@@ -693,7 +893,7 @@ function showContactModal() {
             <div class="modal-actions">
                 <a href="tel:09039238316" class="btn btn-primary modal-btn">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                    <span>${isFa ? 'تماس تلفنی' : 'Call Now'}</span>
+                    <span>${isFa ? 'تماس مستقیم' : 'Call Directly'}</span>
                 </a>
                 <a href="https://wa.me/989039238316" target="_blank" rel="noopener noreferrer" class="btn btn-outline modal-btn">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
@@ -704,64 +904,11 @@ function showContactModal() {
     `;
     
     setTimeout(() => modal.classList.add('active'), 10);
-
-    const escHandler = (e) => {
-        if (e.key === 'Escape') {
-            closeContactModal();
-            document.removeEventListener('keydown', escHandler);
-        }
-    };
-    document.addEventListener('keydown', escHandler);
 }
 
 function closeContactModal() {
     const modal = document.getElementById('contact-modal');
-    if (modal) {
-        modal.classList.remove('active');
-    }
-}
-
-function showToast(message) {
-    // Check if toast already exists
-    let toast = document.querySelector('.toast-notification');
-    if (toast) toast.remove();
-
-    // Create element
-    toast = document.createElement('div');
-    toast.className = 'toast-notification glass';
-    toast.style.cssText = `
-        position: fixed;
-        bottom: 30px;
-        left: 50%;
-        transform: translateX(-50%) translateY(100px);
-        padding: 16px 28px;
-        border-radius: 12px;
-        color: #fff;
-        z-index: 10000;
-        text-align: center;
-        font-weight: 600;
-        box-shadow: 0 10px 30px rgba(0,242,254,0.2);
-        border: 1px solid rgba(0,242,254,0.3);
-        opacity: 0;
-        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.4s ease;
-        font-family: ${currentLang === 'fa' ? 'var(--font-fa)' : 'var(--font-en)'};
-        pointer-events: none;
-    `;
-    toast.textContent = message;
-    document.body.appendChild(toast);
-
-    // Fade In
-    setTimeout(() => {
-        toast.style.transform = 'translateX(-50%) translateY(0)';
-        toast.style.opacity = '1';
-    }, 50);
-
-    // Fade Out after 4 seconds
-    setTimeout(() => {
-        toast.style.transform = 'translateX(-50%) translateY(100px)';
-        toast.style.opacity = '0';
-        setTimeout(() => toast.remove(), 400);
-    }, 4000);
+    if (modal) modal.classList.remove('active');
 }
 
 /* ==========================================================================
@@ -769,9 +916,7 @@ function showToast(message) {
    ========================================================================== */
 function initYear() {
     const yearSpan = document.getElementById('current-year');
-    if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-    }
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
     const scrollTopBtn = document.getElementById('scroll-top');
     if (scrollTopBtn) {

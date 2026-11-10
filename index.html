@@ -6,44 +6,54 @@
     <title>محمدحسین صبور | طراح و توسعه‌دهنده وب & گرافیست</title>
     
     <!-- Meta Tags for SEO -->
-    <meta name="description" content="پورتفولیو و رزومه حرفه‌ای محمدحسین، طراح و توسعه‌دهنده وب و گرافیست خلاق. تبدیل ایده‌های پیچیده به رابط کاربری چشم‌نواز و کاربرپسند.">
-    <meta name="keywords" content="طراحی وب, توسعه وب, گرافیست, فرانت اند, UI/UX, محمدحسین, رزومه, پورتفولیو">
-    <meta name="author" content="MohamadHosein">
+    <meta name="description" content="پورتفولیو و رزومه حرفه‌ای محمدحسین صبور، طراح و توسعه‌دهنده وب و گرافیست خلاق. تبدیل ایده‌های پیچیده به رابط کاربری چشم‌نواز، مینیمال و کاربرپسند.">
+    <meta name="keywords" content="طراحی وب, توسعه وب, گرافیست, فرانت اند, UI/UX, محمدحسین صبور, رزومه, پورتفولیو, React, WordPress">
+    <meta name="author" content="MohamadHosein Sabour">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Main Style Sheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=2026.2">
 </head>
 <body class="rtl">
-    <!-- Ambient Background Lighting (contained to prevent mobile horizontal scroll) -->
+    <!-- Ambient Background Lighting (fixed container to prevent mobile horizontal scroll) -->
     <div class="ambient-background" aria-hidden="true">
         <div class="ambient-glow glow-1"></div>
         <div class="ambient-glow glow-2"></div>
         <div class="ambient-glow glow-3"></div>
+        <div class="ambient-mesh"></div>
     </div>
 
     <!-- Mobile Navigation Drawer Backdrop -->
     <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
 
-    <!-- Custom Cursor -->
-    <div class="custom-cursor-dot"></div>
-    <div class="custom-cursor-outline"></div>
+    <!-- Custom Cursor (Desktop Only) -->
+    <div class="custom-cursor-dot" aria-hidden="true"></div>
+    <div class="custom-cursor-outline" aria-hidden="true"></div>
 
-    <!-- Header Navigation -->
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toast" role="alert" aria-live="polite"></div>
+
+    <!-- Floating Island Header Navigation -->
     <header id="main-header" class="header">
         <div class="container nav-container">
-            <a href="#" class="logo-area" aria-label="MohamadHosein Sabour Logo">
-                <span class="logo-text">MH</span>
-                <span class="logo-dot">.</span>
+            <a href="#" class="logo-area" aria-label="MohamadHosein Sabour Home">
+                <span class="logo-badge">MH</span>
+                <span class="logo-text">Sabour<span class="logo-dot">.</span></span>
             </a>
             
             <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
                 <div class="nav-drawer-header">
-                    <span class="drawer-title" data-i18n="nav_menu_title">منوی دسترسی</span>
+                    <div class="drawer-user">
+                        <span class="drawer-avatar">MH</span>
+                        <div class="drawer-info">
+                            <span class="drawer-name" data-i18n="hero_name">محمدحسین صبور</span>
+                            <span class="drawer-tagline" data-i18n="nav_designer_dev">طراح و توسعه‌دهنده وب</span>
+                        </div>
+                    </div>
                     <button class="nav-drawer-close" id="drawer-close" aria-label="بستن منو">&times;</button>
                 </div>
                 <ul>
@@ -54,13 +64,19 @@
                     <li><a href="#portfolio" class="nav-link" data-i18n="nav_portfolio">پورتفولیو</a></li>
                     <li><a href="#contact" class="nav-link" data-i18n="nav_contact">تماس</a></li>
                 </ul>
+                <div class="drawer-footer">
+                    <a href="tel:09039238316" class="btn btn-primary drawer-call-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span data-i18n="btn_call_direct">تماس مستقیم</span>
+                    </a>
+                </div>
             </nav>
 
             <div class="nav-actions">
                 <!-- Language Switcher -->
                 <button class="lang-switch-btn" id="lang-toggle" aria-label="Change Language">
                     <span class="lang-label">EN</span>
-                    <svg class="lang-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="lang-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="10"></circle>
                         <line x1="2" y1="12" x2="22" y2="12"></line>
                         <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
@@ -79,49 +95,91 @@
 
     <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
+        <!-- Hero Section (Bento Cyber Layout) -->
         <section id="hero" class="hero-section">
             <div class="container hero-grid">
+                <!-- Hero Left / Primary Content -->
                 <div class="hero-content">
-                    <div class="badge-wrapper fade-in-up">
-                        <span class="creative-badge" data-i18n="hero_badge">آماده برای خلق ایده‌های نو</span>
+                    <div class="status-pill fade-in-up">
+                        <span class="status-dot"></span>
+                        <span data-i18n="hero_status">آماده برای خلق ایده‌های نو و پروژه‌های فریلنسری</span>
                     </div>
+
                     <h1 class="hero-title fade-in-up delay-1">
                         <span data-i18n="hero_greetings">سلام، من</span> 
                         <span class="highlight-text gradient-1" data-i18n="hero_name">محمدحسین صبور</span> 
                         <span data-i18n="hero_greetings_end">هستم</span>
                     </h1>
+
                     <h2 class="hero-subtitle fade-in-up delay-2">
                         <span id="typed-text"></span>
                         <span class="typed-cursor">|</span>
                     </h2>
+
                     <p class="hero-desc fade-in-up delay-3" data-i18n="hero_desc">
-                        طراح گرافیک و توسعه‌دهنده وب، متمرکز بر طراحی رابط‌های کاربری مدرن، مینیمال و کاربرپسند. تبدیل ایده‌های پیچیده به تجربیات دیجیتال فراموش‌نشدنی.
+                        طراح گرافیک و توسعه‌دهنده وب، متمرکز بر خلق رابط‌های کاربری مدرن، مینیمال و کاربرپسند. تبدیل ایده‌های پیچیده به تجربیات دیجیتال فراموش‌نشدنی با تلفیق هنر بصری و استانداردهای مهندسی وب.
                     </p>
+
+                    <!-- Hero Actions -->
                     <div class="hero-actions fade-in-up delay-4">
-                        <a href="#portfolio" class="btn btn-primary" data-i18n="hero_cta_projects">مشاهده نمونه‌کارها</a>
-                        <a href="#contact" class="btn btn-outline" data-i18n="hero_cta_contact">همکاری با من</a>
+                        <a href="#portfolio" class="btn btn-primary" data-i18n="hero_cta_projects">
+                            <span data-i18n="hero_cta_projects">مشاهده نمونه‌کارها</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                        <a href="#contact" class="btn btn-outline" data-i18n="hero_cta_contact">
+                            <span data-i18n="hero_cta_contact">همکاری با من</span>
+                        </a>
+                    </div>
+
+                    <!-- Bento Stat Chips -->
+                    <div class="hero-stats-row fade-in-up delay-4">
+                        <div class="stat-chip glass">
+                            <span class="stat-number gradient-tech">3+</span>
+                            <span class="stat-label" data-i18n="about_metric_exp">سال سابقه تخصصی</span>
+                        </div>
+                        <div class="stat-chip glass">
+                            <span class="stat-number gradient-tech">15+</span>
+                            <span class="stat-label" data-i18n="about_metric_proj">پروژه موفق وب</span>
+                        </div>
+                        <div class="stat-chip glass">
+                            <span class="stat-number gradient-tech">100%</span>
+                            <span class="stat-label" data-i18n="stat_satisfaction">تعهد و کیفیت تحویل</span>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Interactive Hero Graphic -->
+                <!-- Hero Right / Visual Terminal Card -->
                 <div class="hero-visual fade-in-up delay-2">
                     <div class="visual-container">
                         <div class="interactive-card glass">
                             <div class="card-header">
                                 <div class="dots"><span></span><span></span><span></span></div>
-                                <div class="card-title">index.js</div>
+                                <div class="terminal-tab">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                    <span>MohamadHosein.dev</span>
+                                </div>
                             </div>
                             <div class="card-body">
-                                <pre><code><span class="keyword">const</span> developer = {
+                                <pre><code><span class="keyword">const</span> creator = {
   name: <span class="string">'MohamadHosein Sabour'</span>,
-  skills: [<span class="string">'WebDev'</span>, <span class="string">'UI/UX'</span>, <span class="string">'Graphics'</span>],
-  passionate: <span class="literal">true</span>,
-  creativity: <span class="number">9.9</span>
+  role: <span class="string">'Web Developer & Graphic Designer'</span>,
+  stack: [<span class="string">'React'</span>, <span class="string">'WordPress'</span>, <span class="string">'Figma'</span>, <span class="string">'AI Tools'</span>],
+  focus: <span class="string">'Clean Code & High-Impact UI'</span>,
+  openToWork: <span class="literal">true</span>,
+  getInTouch: () => <span class="string">'09039238316'</span>
 };</code></pre>
                             </div>
+                            <div class="terminal-footer">
+                                <div class="terminal-status">
+                                    <span class="status-dot"></span>
+                                    <span>TypeScript • Ready</span>
+                                </div>
+                                <button class="terminal-copy-btn" id="copy-code-btn" aria-label="Copy Code snippet" title="کپی کانتکست">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                </button>
+                            </div>
                         </div>
-                        <div class="creative-shapes">
+                        <div class="creative-shapes" aria-hidden="true">
                             <div class="shape circle-1"></div>
                             <div class="shape triangle-1"></div>
                             <div class="shape blob-1"></div>
@@ -135,65 +193,71 @@
                     <div class="mouse">
                         <div class="wheel"></div>
                     </div>
+                    <span class="scroll-text" data-i18n="scroll_down">اسکرول کنید</span>
                 </a>
             </div>
         </section>
 
-        <!-- About Me Section -->
+        <!-- About Me Section (Bento Grid) -->
         <section id="about" class="about-section scroll-reveal">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title" data-i18n="about_title">درباره من</h2>
-                    <span class="section-subtitle" data-i18n="about_subtitle">داستان من و مسیر شغلی‌ام</span>
+                    <span class="section-subtitle" data-i18n="about_subtitle">داستان من، دیدگاه دیزاین و مسیر حرفه‌ای</span>
                 </div>
                 
-                <div class="about-grid">
-                    <div class="about-img-area">
-                        <div class="about-frame">
-                            <!-- Premium Geometric Design placeholder or avatar profile -->
-                            <div class="avatar-glow"></div>
-                            <div class="design-mosaic">
-                                <span></span><span></span><span></span><span></span>
-                            </div>
-                            <div class="about-metrics glass">
-                                <div class="metric-item">
-                                    <span class="metric-val">3+</span>
-                                    <span class="metric-lbl" data-i18n="about_metric_exp">سال سابقه</span>
-                                </div>
-                                <div class="metric-divider"></div>
-                                <div class="metric-item">
-                                    <span class="metric-val">15+</span>
-                                    <span class="metric-lbl" data-i18n="about_metric_proj">پروژه موفق</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="about-text-area">
+                <div class="about-bento-grid">
+                    <!-- Bento 1: Primary Narrative -->
+                    <div class="bento-card bento-narrative glass">
+                        <div class="bento-badge" data-i18n="about_badge">خلق تمایز دیجیتال</div>
                         <h3 class="about-greeting" data-i18n="about_header">خلق هویت بصری متمایز در دنیای دیجیتال</h3>
                         <p class="about-para" data-i18n="about_desc">
                             من یک طراح و گرافیست وب هستم که همیشه مشتاق روبه‌رو شدن با چالش‌های جدید و خلق تجربه‌های بصری متمایز در دنیای دیجیتالم. باور دارم که ترکیب خلاقیت با یک طراحی هدفمند، تمیز و ساختاریافته، نه‌تنها ظاهر سایت را زیبا می‌کند، بلکه ارتباط موثری بین کاربر و محصول می‌سازد. هدف من تبدیل ایده‌های پیچیده به رابط‌های کاربری چشم‌نواز، مینیمال و کاربرپسند است.
                         </p>
-                        
-                        <div class="personal-info">
-                            <div class="info-item">
-                                <span class="info-label" data-i18n="about_info_edu">تحصیلات:</span>
-                                <span class="info-value" data-i18n="about_info_edu_val">کارشناسی مهندسی برق (دانشگاه شهید چمران اهواز)</span>
+                        <div class="narrative-tags">
+                            <span class="tech-tag">UI/UX Strategy</span>
+                            <span class="tech-tag">Full-Stack Craft</span>
+                            <span class="tech-tag">Brand Systems</span>
+                            <span class="tech-tag">Clean Architecture</span>
+                        </div>
+                    </div>
+
+                    <!-- Bento 2: Academic & Analytical Engineering -->
+                    <div class="bento-card bento-academic glass">
+                        <div class="bento-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                        </div>
+                        <h4 class="bento-card-title" data-i18n="about_info_edu">تحصیلات آکادمیک</h4>
+                        <p class="bento-card-val" data-i18n="about_info_edu_val">کارشناسی مهندسی برق (دانشگاه شهید چمران اهواز - ۱۴۰۲ تا کنون)</p>
+                        <p class="bento-card-desc" data-i18n="edu1_desc">بستر مناسب تقویت تفکر تحلیلی، معماری سیستم و حل مسئله در مسائل پیچیده مهندسی و نرم‌افزاری.</p>
+                    </div>
+
+                    <!-- Bento 3: Languages & Communication -->
+                    <div class="bento-card bento-lang glass">
+                        <div class="bento-icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        </div>
+                        <h4 class="bento-card-title" data-i18n="about_info_lang">زبان‌های ارتباطی</h4>
+                        <div class="lang-bars">
+                            <div class="lang-row">
+                                <span class="lang-name" data-i18n="lang_persian">فارسی (زبان مادری)</span>
+                                <span class="lang-level" data-i18n="lang_native">بومی ۱۰۰٪</span>
                             </div>
-                            <div class="info-item">
-                                <span class="info-label" data-i18n="about_info_lang">زبان‌ها:</span>
-                                <span class="info-value" data-i18n="about_info_lang_val">فارسی (زبان مادری) | انگلیسی (پایه / فنی)</span>
+                            <div class="lang-row">
+                                <span class="lang-name" data-i18n="lang_english">انگلیسی (فنی و مستندات)</span>
+                                <span class="lang-level" data-i18n="lang_technical">روان و کاری</span>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="about-actions">
+                    <!-- Bento 4: CV & Hire CTA Hub -->
+                    <div class="bento-card bento-action glass">
+                        <h4 class="bento-card-title" data-i18n="about_connect_title">آماده شروع همکاری هستید؟</h4>
+                        <p class="bento-card-desc" data-i18n="about_connect_desc">می‌توانید نسخه خلاصه رزومه من را دریافت کنید یا بلافاصله پیام بفرستید.</p>
+                        <div class="bento-btn-group">
                             <a href="#contact" class="btn btn-primary" data-i18n="about_cta_hire">دعوت به همکاری</a>
                             <a href="assets/docs/resume-placeholder.pdf" class="btn btn-outline" download id="download-cv">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                    <polyline points="7 10 12 15 17 10"></polyline>
-                                    <line x1="12" y1="15" x2="12" y2="3"></line>
-                                </svg>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                                 <span data-i18n="about_cta_cv">دانلود رزومه</span>
                             </a>
                         </div>
@@ -202,149 +266,177 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- Skills Section (Visual Interactive Bento Matrix) -->
         <section id="skills" class="skills-section scroll-reveal">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title" data-i18n="skills_title">مهارت‌ها و ابزارها</h2>
-                    <span class="section-subtitle" data-i18n="skills_subtitle">تخصص‌های فنی و نرم‌افزارهای طراحی</span>
+                    <span class="section-subtitle" data-i18n="skills_subtitle">تخصص‌های فنی، نرم‌افزارهای طراحی و ابزارهای هوش مصنوعی</span>
                 </div>
                 
                 <div class="skills-grid">
                     <!-- Category 1: Web Development -->
                     <div class="skills-card glass">
-                        <div class="skills-header">
+                        <div class="skills-card-header">
                             <div class="skills-icon-box tech">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <polyline points="16 18 22 12 16 6"></polyline>
                                     <polyline points="8 6 2 12 8 18"></polyline>
                                 </svg>
                             </div>
-                            <h3 data-i18n="skills_cat_dev">توسعه وب</h3>
+                            <div>
+                                <h3 data-i18n="skills_cat_dev">توسعه وب</h3>
+                                <span class="skills-sublabel">Frontend & Modern Web</span>
+                            </div>
                         </div>
-                        <div class="skills-list">
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">HTML & CSS</span>
-                                    <span class="skill-percent">95%</span>
+
+                        <div class="skill-matrix">
+                            <div class="skill-tile">
+                                <div class="tile-top">
+                                    <span class="tile-name">HTML5 & CSS3</span>
+                                    <span class="tile-badge pro">Master</span>
                                 </div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                                <span class="tile-desc">Flexbox, CSS Grid, Responsive Architecture, Animations</span>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">JavaScript</span>
-                                    <span class="skill-percent">85%</span>
+
+                            <div class="skill-tile">
+                                <div class="tile-top">
+                                    <span class="tile-name">JavaScript (ES6+)</span>
+                                    <span class="tile-badge pro">Advanced</span>
                                 </div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                                <span class="tile-desc">Modern DOM, Async/Await, Web APIs, Clean Logic</span>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">React</span>
-                                    <span class="skill-percent">75%</span>
+
+                            <div class="skill-tile">
+                                <div class="tile-top">
+                                    <span class="tile-name">React</span>
+                                    <span class="tile-badge adv">Skilled</span>
                                 </div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                                <span class="tile-desc">Components, State Management, Hooks, SPA</span>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">WordPress</span>
-                                    <span class="skill-percent">90%</span>
+
+                            <div class="skill-tile">
+                                <div class="tile-top">
+                                    <span class="tile-name">WordPress CMS</span>
+                                    <span class="tile-badge pro">Expert</span>
                                 </div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                                <span class="tile-desc">Custom Themes, Plugin Development, E-Commerce, Elementor</span>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Python</span>
-                                    <span class="skill-percent">65%</span>
+
+                            <div class="skill-tile">
+                                <div class="tile-top">
+                                    <span class="tile-name">Python</span>
+                                    <span class="tile-badge adv">Core</span>
                                 </div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
+                                <span class="tile-desc">Scripting, Web Automation, Data Processing</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Category 2: UI/UX & Graphic Design -->
                     <div class="skills-card glass">
-                        <div class="skills-header">
+                        <div class="skills-card-header">
                             <div class="skills-icon-box creative">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
                                     <path d="M12 6V12L16 14"></path>
                                 </svg>
                             </div>
-                            <h3 data-i18n="skills_cat_design">طراحی و رابط کاربری</h3>
+                            <div>
+                                <h3 data-i18n="skills_cat_design">طراحی و رابط کاربری</h3>
+                                <span class="skills-sublabel">UI/UX & Visual Arts</span>
+                            </div>
                         </div>
-                        <div class="skills-list">
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Figma (UI/UX)</span>
-                                    <span class="skill-percent">90%</span>
+
+                        <div class="skill-matrix">
+                            <div class="skill-tile">
+                                <div class="tile-top">
+                                    <span class="tile-name">Figma (UI/UX)</span>
+                                    <span class="tile-badge pro">Expert</span>
                                 </div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                                <span class="tile-desc">Wireframing, Prototyping, Design Systems, Auto-layout</span>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Photoshop & Illustrator</span>
-                                    <span class="skill-percent">85%</span>
+
+                            <div class="skill-tile">
+                                <div class="tile-top">
+                                    <span class="tile-name">Photoshop & Illustrator</span>
+                                    <span class="tile-badge pro">Advanced</span>
                                 </div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                                <span class="tile-desc">Vector Graphics, Retouching, Social Media Layouts</span>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Sketch</span>
-                                    <span class="skill-percent">70%</span>
+
+                            <div class="skill-tile">
+                                <div class="tile-top">
+                                    <span class="tile-name">Motion Graphics & Video</span>
+                                    <span class="tile-badge adv">Skilled</span>
                                 </div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                                <span class="tile-desc">Video Editing, Promotional Teasers, Dynamic Visuals</span>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Motion Graphics & Video</span>
-                                    <span class="skill-percent">80%</span>
+
+                            <div class="skill-tile">
+                                <div class="tile-top">
+                                    <span class="tile-name">Visual Identity Branding</span>
+                                    <span class="tile-badge pro">Expert</span>
                                 </div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                                <span class="tile-desc">Logo Systems, Color Palettes, Brand Guidelines</span>
                             </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span class="skill-name">Visual Identity Branding</span>
-                                    <span class="skill-percent">88%</span>
+
+                            <div class="skill-tile">
+                                <div class="tile-top">
+                                    <span class="tile-name">Sketch</span>
+                                    <span class="tile-badge adv">Skilled</span>
                                 </div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                                <span class="tile-desc">Vector UI Assets, Responsive Layouts</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Category 3: Tools & Methodologies -->
                     <div class="skills-card glass">
-                        <div class="skills-header">
+                        <div class="skills-card-header">
                             <div class="skills-icon-box tools">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
                                 </svg>
                             </div>
-                            <h3 data-i18n="skills_cat_tools">ابزارهای فنی</h3>
-                        </div>
-                        <div class="tools-grid">
-                            <div class="tool-badge">
-                                <span class="tool-dot"></span>
-                                <span class="tool-name">VS Code</span>
+                            <div>
+                                <h3 data-i18n="skills_cat_tools">ابزارها و استانداردها</h3>
+                                <span class="skills-sublabel">Workflow & Automation</span>
                             </div>
-                            <div class="tool-badge">
+                        </div>
+
+                        <div class="tools-bento-grid">
+                            <div class="tool-chip glass">
                                 <span class="tool-dot"></span>
                                 <span class="tool-name">Git & GitHub</span>
                             </div>
-                            <div class="tool-badge">
+                            <div class="tool-chip glass">
                                 <span class="tool-dot"></span>
-                                <span class="tool-name">AI Editing tools</span>
+                                <span class="tool-name">VS Code</span>
                             </div>
-                            <div class="tool-badge">
+                            <div class="tool-chip glass">
+                                <span class="tool-dot"></span>
+                                <span class="tool-name">AI Generation Tools</span>
+                            </div>
+                            <div class="tool-chip glass">
                                 <span class="tool-dot"></span>
                                 <span class="tool-name">Anti-gravity</span>
                             </div>
-                            <div class="tool-badge">
+                            <div class="tool-chip glass">
+                                <span class="tool-dot"></span>
+                                <span class="tool-name">Responsive Design</span>
+                            </div>
+                            <div class="tool-chip glass">
                                 <span class="tool-dot"></span>
                                 <span class="tool-name">WordPress CMS</span>
                             </div>
-                            <div class="tool-badge">
+                            <div class="tool-chip glass">
                                 <span class="tool-dot"></span>
-                                <span class="tool-name">Responsive Design</span>
+                                <span class="tool-name">WCAG Accessibility</span>
+                            </div>
+                            <div class="tool-chip glass">
+                                <span class="tool-dot"></span>
+                                <span class="tool-name">Web Performance</span>
                             </div>
                         </div>
                     </div>
@@ -357,14 +449,14 @@
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title" data-i18n="timeline_title">مسیر شغلی و تحصیلی</h2>
-                    <span class="section-subtitle" data-i18n="timeline_subtitle">سوابق کاری و تحصیلات دانشگاهی</span>
+                    <span class="section-subtitle" data-i18n="timeline_subtitle">سوابق کاری تخصصی و تحصیلات دانشگاهی</span>
                 </div>
                 
                 <div class="timeline-container">
                     <!-- Experience 1: International Freelancer (1404 - اکنون) -->
                     <div class="timeline-item timeline-exp">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date" data-i18n="exp1_date">1404 - اکنون</div>
+                        <div class="timeline-date-chip" data-i18n="exp1_date">1404 - اکنون</div>
                         <div class="timeline-content glass">
                             <div class="timeline-header">
                                 <h3 class="role" data-i18n="exp1_title">فریلنسر بین‌المللی (طراحی سایت، برنامه‌نویسی و ادیت ویدیو)</h3>
@@ -381,7 +473,7 @@
                     <!-- Experience 2: Web Designer & Developer (1403 - اکنون) -->
                     <div class="timeline-item timeline-exp">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date" data-i18n="exp2_date">1403 - اکنون</div>
+                        <div class="timeline-date-chip" data-i18n="exp2_date">1403 - اکنون</div>
                         <div class="timeline-content glass">
                             <div class="timeline-header">
                                 <h3 class="role" data-i18n="exp2_title">طراح و توسعه‌دهنده وب (فریلنسر تخصصی)</h3>
@@ -398,7 +490,7 @@
                     <!-- Experience 3: Web Graphic Designer (1403 - 1404) -->
                     <div class="timeline-item timeline-exp">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date" data-i18n="exp3_date">1403 - 1404</div>
+                        <div class="timeline-date-chip" data-i18n="exp3_date">1403 - 1404</div>
                         <div class="timeline-content glass">
                             <div class="timeline-header">
                                 <h3 class="role" data-i18n="exp3_title">گرافیست وب</h3>
@@ -414,7 +506,7 @@
                     <!-- Education 1: Electrical Engineering (1402 - اکنون) -->
                     <div class="timeline-item timeline-edu">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date" data-i18n="edu1_date">1402 - اکنون</div>
+                        <div class="timeline-date-chip" data-i18n="edu1_date">1402 - اکنون</div>
                         <div class="timeline-content glass">
                             <div class="timeline-header">
                                 <h3 class="role" data-i18n="edu1_title">کارشناسی مهندسی برق</h3>
@@ -427,7 +519,7 @@
                     <!-- Experience 4: Visual Content & AI Specialist (1401 - 1404) -->
                     <div class="timeline-item timeline-exp">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date" data-i18n="exp4_date">1401 - 1404</div>
+                        <div class="timeline-date-chip" data-i18n="exp4_date">1401 - 1404</div>
                         <div class="timeline-content glass">
                             <div class="timeline-header">
                                 <h3 class="role" data-i18n="exp4_title">متخصص محتوای بصری و هوش مصنوعی</h3>
@@ -443,12 +535,12 @@
             </div>
         </section>
 
-        <!-- Portfolio Showcase Section -->
+        <!-- Portfolio Showcase Section (with Mobile Touch-Scroll, Auto-Scroll & Lightbox) -->
         <section id="portfolio" class="portfolio-section scroll-reveal">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title"><span data-i18n="portfolio_title">نمونه‌کارها</span> <span class="portfolio-demo-label" data-i18n="portfolio_demo"></span></h2>
-                    <span class="section-subtitle" data-i18n="portfolio_subtitle">منتخبی از آخرین طراحی‌ها و پروژه‌های من</span>
+                    <h2 class="section-title"><span data-i18n="portfolio_title">نمونه‌کارها</span></h2>
+                    <span class="section-subtitle" data-i18n="portfolio_subtitle">منتخبی از آخرین طراحی‌ها، افزونه‌ها و پروژه‌های وب من</span>
                 </div>
                 
                 <!-- Filters -->
@@ -461,18 +553,23 @@
                 <!-- Portfolio Grid -->
                 <div class="portfolio-grid">
                     <!-- Project 1 (ChatNegar) -->
-                    <div class="portfolio-item glass" data-category="ai web">
-                        <div class="project-img-box">
+                    <div class="portfolio-item glass" data-category="ai web" id="proj-card-1">
+                        <div class="project-img-box touch-scrollable" id="img-box-1" tabindex="0" role="region" aria-label="تصویر اسکرول‌شونده پروژه چت‌نگار">
                             <span class="project-status-badge" data-i18n="badge_live">پروژه فعال</span>
-                            <a href="https://mohamadhoseinsabour.github.io/ChatNegar-site/docs/" target="_blank" rel="noopener noreferrer" class="project-img-anchor" aria-label="مشاهده سایت چت‌نگار">
-                                <picture>
-                                    <source srcset="assets/images/chatnegar.webp" type="image/webp">
-                                    <img src="assets/images/chatnegar.png" alt="ChatNegar AI" class="project-img" loading="lazy" decoding="async">
-                                </picture>
-                            </a>
+                            <div class="mobile-scroll-hint" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+                                <span data-i18n="hint_touch_scroll">لمس و اسکرول برای مشاهده کل صفحه</span>
+                            </div>
+                            <picture>
+                                <source srcset="assets/images/chatnegar.webp" type="image/webp">
+                                <img src="assets/images/chatnegar.png" alt="ChatNegar AI" class="project-img" loading="lazy" decoding="async">
+                            </picture>
                             <div class="project-overlay">
                                 <div class="project-links">
-                                    <a href="https://mohamadhoseinsabour.github.io/ChatNegar-site/docs/" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="سایت معرفی چت‌نگار" title="مشاهده وب‌سایت معرفی">
+                                    <button class="project-link-icon btn-open-lightbox" data-img="assets/images/chatnegar.webp" data-title="سایت معرفی و افزونه هوش مصنوعی چت‌نگار" aria-label="پیش‌نمایش تمام‌صفحه">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                                    </button>
+                                    <a href="https://mohamadhoseinsabour.github.io/ChatNegar-site/docs/" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="سایت معرفی چت‌نگار" title="مشاهده وب‌سایت">
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                                     </a>
                                 </div>
@@ -484,28 +581,43 @@
                             </div>
                             <h3 class="project-title" data-i18n="proj1_title">سایت معرفی و افزونه هوش مصنوعی چت‌نگار</h3>
                             <p class="project-desc" data-i18n="proj1_desc">طراحی و پیاده‌سازی کامل لندینگ‌پیج معرفی محصول و توسعه فنی افزونه هوشمند چت‌بات آنلاین برای وردپرس. این سیستم با اتصال به موتورهای هوش مصنوعی، پاسخ‌گویی خودکار ۲۴/۷، افزایش نرخ تبدیل مشتریان و پشتیبانی سریع در وب‌سایت‌های فروشگاهی را فراهم می‌کند.</p>
+                            
+                            <!-- Interactive Card Controls -->
                             <div class="project-card-footer">
-                                <a href="https://mohamadhoseinsabour.github.io/ChatNegar-site/docs/" target="_blank" rel="noopener noreferrer" class="btn-project-cta">
-                                    <span data-i18n="view_project">مشاهده وب‌سایت</span>
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                <button class="btn-card-action btn-autoscroll" data-box="img-box-1" aria-label="اسکرول خودکار">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                    <span data-i18n="btn_autoscroll">اسکرول خودکار</span>
+                                </button>
+                                <button class="btn-card-action btn-open-lightbox" data-img="assets/images/chatnegar.webp" data-title="سایت معرفی و افزونه چت‌نگار" aria-label="پیش‌نمایش تمام صفحه">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7"></path><path d="M3 21l7-7"></path></svg>
+                                    <span data-i18n="btn_fullscreen">نمای کامل</span>
+                                </button>
+                                <a href="https://mohamadhoseinsabour.github.io/ChatNegar-site/docs/" target="_blank" rel="noopener noreferrer" class="btn-card-action btn-primary-action" aria-label="مشاهده وب‌سایت">
+                                    <span data-i18n="view_project">مشاهده آنلاین</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                                 </a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project 2 (MaghaleNegar) -->
-                    <div class="portfolio-item glass" data-category="ai web">
-                        <div class="project-img-box">
+                    <div class="portfolio-item glass" data-category="ai web" id="proj-card-2">
+                        <div class="project-img-box touch-scrollable" id="img-box-2" tabindex="0" role="region" aria-label="تصویر اسکرول‌شونده پروژه مقاله‌نگار">
                             <span class="project-status-badge" data-i18n="badge_live">پروژه فعال</span>
-                            <a href="https://mohamadhoseinsabour.github.io/MaghaleNegarSite/" target="_blank" rel="noopener noreferrer" class="project-img-anchor" aria-label="مشاهده سایت مقاله‌نگار">
-                                <picture>
-                                    <source srcset="assets/images/maghalenegar.webp" type="image/webp">
-                                    <img src="assets/images/maghalenegar.png" alt="MaghaleNegar AI" class="project-img" loading="lazy" decoding="async">
-                                </picture>
-                            </a>
+                            <div class="mobile-scroll-hint" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+                                <span data-i18n="hint_touch_scroll">لمس و اسکرول برای مشاهده کل صفحه</span>
+                            </div>
+                            <picture>
+                                <source srcset="assets/images/maghalenegar.webp" type="image/webp">
+                                <img src="assets/images/maghalenegar.png" alt="MaghaleNegar AI" class="project-img" loading="lazy" decoding="async">
+                            </picture>
                             <div class="project-overlay">
                                 <div class="project-links">
-                                    <a href="https://mohamadhoseinsabour.github.io/MaghaleNegarSite/" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="سایت معرفی مقاله‌نگار" title="مشاهده وب‌سایت معرفی">
+                                    <button class="project-link-icon btn-open-lightbox" data-img="assets/images/maghalenegar.webp" data-title="سایت معرفی و افزونه هوش مصنوعی مقاله‌نگار" aria-label="پیش‌نمایش تمام‌صفحه">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                                    </button>
+                                    <a href="https://mohamadhoseinsabour.github.io/MaghaleNegarSite/" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="سایت معرفی مقاله‌نگار" title="مشاهده وب‌سایت">
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                                     </a>
                                 </div>
@@ -517,27 +629,41 @@
                             </div>
                             <h3 class="project-title" data-i18n="proj2_title">سایت معرفی و افزونه هوش مصنوعی مقاله‌نگار</h3>
                             <p class="project-desc" data-i18n="proj2_desc">توسعه افزونه پیشرفته هوش مصنوعی مقاله‌نگار و طراحی اختصاصی سایت معرفی آن. این ابزار هوشمند قادر است مقالات کاملاً سئو شده (SEO)، عناوین جذاب، متا دسکریپشن و محصول‌های کامل را با استانداردهای گوگل و به صورت خودکار در وب‌سایت‌های وردپرسی تولید کند.</p>
+                            
                             <div class="project-card-footer">
-                                <a href="https://mohamadhoseinsabour.github.io/MaghaleNegarSite/" target="_blank" rel="noopener noreferrer" class="btn-project-cta">
-                                    <span data-i18n="view_project">مشاهده وب‌سایت</span>
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                <button class="btn-card-action btn-autoscroll" data-box="img-box-2" aria-label="اسکرول خودکار">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                    <span data-i18n="btn_autoscroll">اسکرول خودکار</span>
+                                </button>
+                                <button class="btn-card-action btn-open-lightbox" data-img="assets/images/maghalenegar.webp" data-title="سایت معرفی و افزونه مقاله‌نگار" aria-label="پیش‌نمایش تمام صفحه">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7"></path><path d="M3 21l7-7"></path></svg>
+                                    <span data-i18n="btn_fullscreen">نمای کامل</span>
+                                </button>
+                                <a href="https://mohamadhoseinsabour.github.io/MaghaleNegarSite/" target="_blank" rel="noopener noreferrer" class="btn-card-action btn-primary-action" aria-label="مشاهده وب‌سایت">
+                                    <span data-i18n="view_project">مشاهده آنلاین</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                                 </a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project 3 (myResume) -->
-                    <div class="portfolio-item glass" data-category="web">
-                        <div class="project-img-box">
+                    <div class="portfolio-item glass" data-category="web" id="proj-card-3">
+                        <div class="project-img-box touch-scrollable" id="img-box-3" tabindex="0" role="region" aria-label="تصویر اسکرول‌شونده پروژه رزومه">
                             <span class="project-status-badge" data-i18n="badge_live">پروژه فعال</span>
-                            <a href="https://mohamadhoseinsabour.github.io/myResume/" target="_blank" rel="noopener noreferrer" class="project-img-anchor" aria-label="مشاهده وب‌سایت رزومه">
-                                <picture>
-                                    <source srcset="assets/images/myresume.webp" type="image/webp">
-                                    <img src="assets/images/myresume.png" alt="Personal Resume" class="project-img" loading="lazy" decoding="async">
-                                </picture>
-                            </a>
+                            <div class="mobile-scroll-hint" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+                                <span data-i18n="hint_touch_scroll">لمس و اسکرول برای مشاهده کل صفحه</span>
+                            </div>
+                            <picture>
+                                <source srcset="assets/images/myresume.webp" type="image/webp">
+                                <img src="assets/images/myresume.png" alt="Personal Resume" class="project-img" loading="lazy" decoding="async">
+                            </picture>
                             <div class="project-overlay">
                                 <div class="project-links">
+                                    <button class="project-link-icon btn-open-lightbox" data-img="assets/images/myresume.webp" data-title="سایت رزومه و پورتفولیوی شخصی" aria-label="پیش‌نمایش تمام‌صفحه">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                                    </button>
                                     <a href="https://mohamadhoseinsabour.github.io/myResume/" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="مشاهده وب‌سایت رزومه" title="مشاهده وب‌سایت">
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                                     </a>
@@ -550,27 +676,41 @@
                             </div>
                             <h3 class="project-title" data-i18n="proj3_title">سایت رزومه و پورتفولیوی شخصی</h3>
                             <p class="project-desc" data-i18n="proj3_desc">طراحی و فرانت‌اند اختصاصی وب‌سایت رزومه و پورتفولیوی شخصی به صورت استاتیک و دو زبانه (فارسی و انگلیسی). بهره‌گیری از هویت بصری مدرن، افکت‌های گلس‌مورفیسم، انیمیشن‌های تعاملی اسکرول و رابط کاربری شیک برای نمایش جذاب سوابق کاری و نمونه‌کارها.</p>
+                            
                             <div class="project-card-footer">
-                                <a href="https://mohamadhoseinsabour.github.io/myResume/" target="_blank" rel="noopener noreferrer" class="btn-project-cta">
-                                    <span data-i18n="view_project">مشاهده وب‌سایت</span>
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                <button class="btn-card-action btn-autoscroll" data-box="img-box-3" aria-label="اسکرول خودکار">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                    <span data-i18n="btn_autoscroll">اسکرول خودکار</span>
+                                </button>
+                                <button class="btn-card-action btn-open-lightbox" data-img="assets/images/myresume.webp" data-title="سایت رزومه و پورتفولیوی شخصی" aria-label="پیش‌نمایش تمام صفحه">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7"></path><path d="M3 21l7-7"></path></svg>
+                                    <span data-i18n="btn_fullscreen">نمای کامل</span>
+                                </button>
+                                <a href="https://mohamadhoseinsabour.github.io/myResume/" target="_blank" rel="noopener noreferrer" class="btn-card-action btn-primary-action" aria-label="مشاهده وب‌سایت">
+                                    <span data-i18n="view_project">مشاهده آنلاین</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                                 </a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project 4 (Hosseiny Kala) -->
-                    <div class="portfolio-item glass" data-category="web">
-                        <div class="project-img-box">
+                    <div class="portfolio-item glass" data-category="web" id="proj-card-4">
+                        <div class="project-img-box touch-scrollable" id="img-box-4" tabindex="0" role="region" aria-label="تصویر اسکرول‌شونده پروژه حسینی کالا">
                             <span class="project-status-badge" data-i18n="badge_live">پروژه فعال</span>
-                            <a href="https://hosseinykala.ir/" target="_blank" rel="noopener noreferrer" class="project-img-anchor" aria-label="مشاهده حسینی کالا">
-                                <picture>
-                                    <source srcset="assets/images/hosseinykala.webp" type="image/webp">
-                                    <img src="assets/images/hosseinykala.png" alt="Hosseiny Kala" class="project-img" loading="lazy" decoding="async">
-                                </picture>
-                            </a>
+                            <div class="mobile-scroll-hint" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+                                <span data-i18n="hint_touch_scroll">لمس و اسکرول برای مشاهده کل صفحه</span>
+                            </div>
+                            <picture>
+                                <source srcset="assets/images/hosseinykala.webp" type="image/webp">
+                                <img src="assets/images/hosseinykala.png" alt="Hosseiny Kala" class="project-img" loading="lazy" decoding="async">
+                            </picture>
                             <div class="project-overlay">
                                 <div class="project-links">
+                                    <button class="project-link-icon btn-open-lightbox" data-img="assets/images/hosseinykala.webp" data-title="فروشگاه اینترنتی حسینی کالا" aria-label="پیش‌نمایش تمام‌صفحه">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                                    </button>
                                     <a href="https://hosseinykala.ir/" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="مشاهده حسینی کالا" title="مشاهده وب‌سایت">
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                                     </a>
@@ -583,27 +723,41 @@
                             </div>
                             <h3 class="project-title" data-i18n="proj4_title">فروشگاه اینترنتی حسینی کالا</h3>
                             <p class="project-desc" data-i18n="proj4_desc">طراحی، چیدمان بصری و توسعه پلتفرم فروشگاهی حسینی کالا در زمینه عرضه آنلاین انواع لوازم خانگی و دستگاه‌های الکترونیکی. تمرکز اصلی بر بهینه‌سازی مسیر خرید کاربر (User Journey)، طراحی بنرهای تبلیغاتی، رابط کاربری روان و دسترسی سریع به کالاها.</p>
+                            
                             <div class="project-card-footer">
-                                <a href="https://hosseinykala.ir/" target="_blank" rel="noopener noreferrer" class="btn-project-cta">
-                                    <span data-i18n="view_project">مشاهده وب‌سایت</span>
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                <button class="btn-card-action btn-autoscroll" data-box="img-box-4" aria-label="اسکرول خودکار">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                    <span data-i18n="btn_autoscroll">اسکرول خودکار</span>
+                                </button>
+                                <button class="btn-card-action btn-open-lightbox" data-img="assets/images/hosseinykala.webp" data-title="فروشگاه اینترنتی حسینی کالا" aria-label="پیش‌نمایش تمام صفحه">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7"></path><path d="M3 21l7-7"></path></svg>
+                                    <span data-i18n="btn_fullscreen">نمای کامل</span>
+                                </button>
+                                <a href="https://hosseinykala.ir/" target="_blank" rel="noopener noreferrer" class="btn-card-action btn-primary-action" aria-label="مشاهده وب‌سایت">
+                                    <span data-i18n="view_project">مشاهده آنلاین</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                                 </a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Project 5 (Nakhl Market) -->
-                    <div class="portfolio-item glass" data-category="web">
-                        <div class="project-img-box">
+                    <div class="portfolio-item glass" data-category="web" id="proj-card-5">
+                        <div class="project-img-box touch-scrollable" id="img-box-5" tabindex="0" role="region" aria-label="تصویر اسکرول‌شونده پروژه نخل مارکت">
                             <span class="project-status-badge" data-i18n="badge_live">پروژه فعال</span>
-                            <a href="https://nakhlmarket.com/" target="_blank" rel="noopener noreferrer" class="project-img-anchor" aria-label="مشاهده نخل مارکت">
-                                <picture>
-                                    <source srcset="assets/images/nakhlmarket.webp" type="image/webp">
-                                    <img src="assets/images/nakhlmarket.png" alt="Nakhl Market" class="project-img" loading="lazy" decoding="async">
-                                </picture>
-                            </a>
+                            <div class="mobile-scroll-hint" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+                                <span data-i18n="hint_touch_scroll">لمس و اسکرول برای مشاهده کل صفحه</span>
+                            </div>
+                            <picture>
+                                <source srcset="assets/images/nakhlmarket.webp" type="image/webp">
+                                <img src="assets/images/nakhlmarket.png" alt="Nakhl Market" class="project-img" loading="lazy" decoding="async">
+                            </picture>
                             <div class="project-overlay">
                                 <div class="project-links">
+                                    <button class="project-link-icon btn-open-lightbox" data-img="assets/images/nakhlmarket.webp" data-title="فروشگاه اینترنتی نخل مارکت" aria-label="پیش‌نمایش تمام‌صفحه">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                                    </button>
                                     <a href="https://nakhlmarket.com/" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="مشاهده نخل مارکت" title="مشاهده وب‌سایت">
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                                     </a>
@@ -616,10 +770,19 @@
                             </div>
                             <h3 class="project-title" data-i18n="proj5_title">فروشگاه اینترنتی نخل مارکت</h3>
                             <p class="project-desc" data-i18n="proj5_desc">همکاری در تیم طراحی پلتفرم نخل مارکت به عنوان یکی از مرجع‌های اصلی و بزرگ فروشگاه‌های اینترنتی کنسول، بازی و تجهیزات گیمینگ در ایران (۲ سال پیش). طراحی المان‌های گرافیکی، هویت بصری صفحات و ارتقای تعامل کاربران در پلتفرم.</p>
+                            
                             <div class="project-card-footer">
-                                <a href="https://nakhlmarket.com/" target="_blank" rel="noopener noreferrer" class="btn-project-cta">
-                                    <span data-i18n="view_project">مشاهده وب‌سایت</span>
-                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                <button class="btn-card-action btn-autoscroll" data-box="img-box-5" aria-label="اسکرول خودکار">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                    <span data-i18n="btn_autoscroll">اسکرول خودکار</span>
+                                </button>
+                                <button class="btn-card-action btn-open-lightbox" data-img="assets/images/nakhlmarket.webp" data-title="فروشگاه اینترنتی نخل مارکت" aria-label="پیش‌نمایش تمام صفحه">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M9 21H3v-6"></path><path d="M21 3l-7 7"></path><path d="M3 21l7-7"></path></svg>
+                                    <span data-i18n="btn_fullscreen">نمای کامل</span>
+                                </button>
+                                <a href="https://nakhlmarket.com/" target="_blank" rel="noopener noreferrer" class="btn-card-action btn-primary-action" aria-label="مشاهده وب‌سایت">
+                                    <span data-i18n="view_project">مشاهده آنلاین</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
                                 </a>
                             </div>
                         </div>
@@ -628,12 +791,12 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- Contact Section (Bento Hub) -->
         <section id="contact" class="contact-section scroll-reveal">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title" data-i18n="contact_title">تماس با من</h2>
-                    <span class="section-subtitle" data-i18n="contact_subtitle">بیایید با هم پروژه جدیدی را شروع کنیم</span>
+                    <span class="section-subtitle" data-i18n="contact_subtitle">بیایید گفتگوی خلاقانه را شروع کنیم؛ آماده همکاری و اجرای پروژه‌های نو</span>
                 </div>
                 
                 <div class="contact-grid">
@@ -643,52 +806,61 @@
                         <p class="panel-desc" data-i18n="contact_panel_desc">برای گفتگو درباره همکاری، استخدام یا فقط گپ زدن در حوزه دیزاین و برنامه‌نویسی با من در تماس باشید.</p>
                         
                         <div class="contact-cards">
+                            <!-- Phone with Copy Button -->
                             <div class="contact-card glass">
                                 <div class="card-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                                 </div>
                                 <div class="card-details">
-                                    <span class="card-label" data-i18n="contact_phone">شماره تلفن</span>
-                                    <a href="tel:09039238316" class="card-link" data-i18n="contact_phone_val">09039238316</a>
+                                    <span class="card-label" data-i18n="contact_phone">شماره تلفن مستقیم</span>
+                                    <div class="phone-action-row">
+                                        <a href="tel:09039238316" class="card-link" data-i18n="contact_phone_val">09039238316</a>
+                                        <button class="copy-pill-btn" id="copy-phone-btn" aria-label="کپی شماره تماس">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                            <span data-i18n="btn_copy">کپی</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
 
+                            <!-- Email -->
                             <div class="contact-card glass">
                                 <div class="card-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                                 </div>
                                 <div class="card-details">
-                                    <span class="card-label" data-i18n="contact_email">ایمیل</span>
+                                    <span class="card-label" data-i18n="contact_email">آدرس ایمیل</span>
                                     <a href="mailto:mmhhss1384@gmail.com" class="card-link">mmhhss1384@gmail.com</a>
                                 </div>
                             </div>
 
+                            <!-- Location -->
                             <div class="contact-card glass">
                                 <div class="card-icon">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                                 </div>
                                 <div class="card-details">
-                                    <span class="card-label" data-i18n="contact_location">موقعیت</span>
-                                    <span class="card-link" data-i18n="contact_location_val">اهواز، ایران</span>
+                                    <span class="card-label" data-i18n="contact_location">موقعیت کاری</span>
+                                    <span class="card-link" data-i18n="contact_location_val">اهواز، ایران (فعال در پروژه‌های دورکاری)</span>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Social Media -->
                         <div class="social-wrapper">
-                            <span class="social-title" data-i18n="contact_social">شبکه‌های اجتماعی</span>
+                            <span class="social-title" data-i18n="contact_social">شبکه‌های اجتماعی و پیام‌رسان‌ها</span>
                             <div class="social-links">
                                 <a href="https://github.com/MohamadHoseinSabour" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub" title="GitHub">
-                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                                </a>
-                                <a href="https://instagram.com/mohmadhoseins" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram" title="Instagram: @mohmadhoseins">
-                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                                </a>
-                                <a href="https://t.me/N_blood_9" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Telegram" title="Telegram: @N_blood_9">
-                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                                 </a>
                                 <a href="https://wa.me/989039238316" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp" title="WhatsApp: 09039238316">
-                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                                </a>
+                                <a href="https://t.me/N_blood_9" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Telegram" title="Telegram: @N_blood_9">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                                </a>
+                                <a href="https://instagram.com/mohmadhoseins" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram" title="Instagram: @mohmadhoseins">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                                 </a>
                             </div>
                         </div>
@@ -730,14 +902,37 @@
         </section>
     </main>
 
+    <!-- Fullscreen Lightbox Modal for Project Previews -->
+    <div class="preview-lightbox" id="preview-lightbox" role="dialog" aria-modal="true" aria-label="پیش‌نمایش تمام‌صفحه پروژه">
+        <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+        <div class="lightbox-shell glass">
+            <div class="lightbox-header">
+                <div class="lightbox-title-area">
+                    <span class="lightbox-dot"></span>
+                    <h3 class="lightbox-title" id="lightbox-title">پیش‌نمایش کامل</h3>
+                </div>
+                <div class="lightbox-actions">
+                    <span class="lightbox-hint" data-i18n="lightbox_scroll_hint">برای مشاهده کل پروژه به پایین اسکرول کنید</span>
+                    <button class="lightbox-close-btn" id="lightbox-close" aria-label="بستن پیش‌نمایش">&times;</button>
+                </div>
+            </div>
+            <div class="lightbox-viewport" id="lightbox-viewport">
+                <img src="" alt="Full Project Preview" class="lightbox-full-img" id="lightbox-img">
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-content">
-            <p class="copyright">
-                &copy; <span id="current-year">2026</span> <span data-i18n="footer_rights">تمامی حقوق برای محمدحسین محفوظ است. طراحی با عشق.</span>
-            </p>
-            <div class="scroll-to-top" id="scroll-top">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <div class="footer-brand">
+                <span class="footer-logo">MH.</span>
+                <p class="copyright">
+                    &copy; <span id="current-year">2026</span> <span data-i18n="footer_rights">تمامی حقوق برای محمدحسین صبور محفوظ است. طراحی با عشق و کدنویسی استاندارد.</span>
+                </p>
+            </div>
+            <div class="scroll-to-top" id="scroll-top" aria-label="Back to top" title="بازگشت به بالا">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="12" y1="19" x2="12" y2="5"></line>
                     <polyline points="5 12 12 5 19 12"></polyline>
                 </svg>
@@ -746,6 +941,6 @@
     </footer>
 
     <!-- App JavaScript -->
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js?v=2026.2"></script>
 </body>
 </html>
