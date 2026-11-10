@@ -4,6 +4,7 @@
 const translations = {
     fa: {
         // Navbar
+        nav_menu_title: "منوی دسترسی",
         nav_home: "خانه",
         nav_about: "درباره من",
         nav_skills: "مهارت‌ها",
@@ -84,6 +85,8 @@ const translations = {
         filter_all: "همه",
         filter_ai: "افزونه و هوش مصنوعی",
         filter_web: "توسعه وب و فروشگاهی",
+        view_project: "مشاهده وب‌سایت",
+        badge_live: "پروژه فعال",
         
         proj1_cat: "افزونه وردپرس و هوش مصنوعی",
         proj1_title: "سایت معرفی و افزونه هوش مصنوعی چت‌نگار",
@@ -132,6 +135,7 @@ const translations = {
     },
     en: {
         // Navbar
+        nav_menu_title: "Navigation",
         nav_home: "Home",
         nav_about: "About Me",
         nav_skills: "Skills",
@@ -212,6 +216,8 @@ const translations = {
         filter_all: "All",
         filter_ai: "AI & Plugins",
         filter_web: "Web & E-Commerce",
+        view_project: "View Live Project",
+        badge_live: "Live Project",
         
         proj1_cat: "WordPress Plugin & AI",
         proj1_title: "ChatNegar AI Plugin & Landing Site",
@@ -459,30 +465,66 @@ function initCustomCursor() {
 function initMobileMenu() {
     const menuToggle = document.getElementById('menu-toggle');
     const navMenu = document.getElementById('nav-menu');
+    const navBackdrop = document.getElementById('nav-backdrop');
+    const drawerClose = document.getElementById('drawer-close');
     const navLinks = document.querySelectorAll('.nav-link');
 
     if (!menuToggle || !navMenu) return;
 
-    // Open/Close
-    menuToggle.addEventListener('click', (e) => {
-        e.stopPropagation();
-        menuToggle.classList.toggle('open');
-        navMenu.classList.toggle('open');
-    });
+    function openMenu() {
+        menuToggle.classList.add('open');
+        navMenu.classList.add('open');
+        if (navBackdrop) navBackdrop.classList.add('active');
+        document.body.classList.add('menu-open');
+    }
+
+    function closeMenu() {
+        menuToggle.classList.remove('open');
+        navMenu.classList.remove('open');
+        if (navBackdrop) navBackdrop.classList.remove('active');
+        document.body.classList.remove('menu-open');
+    }
+
+    function toggleMenu(e) {
+        if (e) e.stopPropagation();
+        if (navMenu.classList.contains('open')) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    }
+
+    // Toggle button
+    menuToggle.addEventListener('click', toggleMenu);
+
+    // Dedicated Drawer Close Button
+    if (drawerClose) {
+        drawerClose.addEventListener('click', closeMenu);
+    }
+
+    // Backdrop click
+    if (navBackdrop) {
+        navBackdrop.addEventListener('click', closeMenu);
+    }
 
     // Close when clicking nav-link
     navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            menuToggle.classList.remove('open');
-            navMenu.classList.remove('open');
-        });
+        link.addEventListener('click', closeMenu);
     });
 
     // Close when clicking outside drawer
     document.addEventListener('click', (e) => {
-        if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
-            menuToggle.classList.remove('open');
-            navMenu.classList.remove('open');
+        if (navMenu.classList.contains('open') && 
+            !navMenu.contains(e.target) && 
+            !menuToggle.contains(e.target)) {
+            closeMenu();
+        }
+    });
+
+    // ESC key closes mobile menu
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+            closeMenu();
         }
     });
 
